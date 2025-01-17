@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hotel">
+    <script src="js/font-loader.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main-styles.min.css">
+    <link rel="stylesheet" href="css/about-us-page-styles.min.css">
+    <title>Azul Emerald | About Us</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <button type="button" aria-label="burger-button" class="header__burger burger">
+                    <span class="burger__line burger__line_01"></span>
+                    <span class="burger__line burger__line_02"></span>
+                </button>
+                <a href="/" aria-label="link homepage" class="header__logo"><img width="194" height="52" src="img/main/logo.svg" alt="logo"></a>
+                <div class="header__menu-wrapper">
+                    <nav class='header__menu header-menu'>
+                        <ul class='header-menu__list'>
+                            <li class='header-menu__item'>
+                                <a href='/' class='header-menu__link'>Homepage</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                 <a href='about-us.html' class='header-menu__link'>About us</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='/' class='header-menu__link'>Activities</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='/' class='header-menu__link'>Accomodations</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='/' class='header-menu__link'>Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions">
+                    <div class="header__select select" data-select-menu>
+                        <button class="select__header" type="button" aria-label="choose language"
+                            data-select-menu-button>
+                            <span class="select__value" data-select-menu-value>En</span>
+                            <span class="select__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#arrow-bottom'></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="select__body" data-select-menu-drop-down>
+                            <li class="select__item" data-select-menu-option><span>En</span></li>
+                            <li class="select__item" data-select-menu-option><span>Ua</span></li>
+                        </ul>
+                    </div>
+                    <div class="header__buttons" data-da=".header__menu-wrapper,1200,last">
+                        <a href="" class="header__button header__button-back">Sign in</a>
+                        <a href="" class="header__button header__button-transparent">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="hero" aria-labelledby="about-us-main-title">
+                <div class="hero__swiper swiper-hero shadow">
+                    <div class="swiper-hero__wrapper swiper-wrapper">
+                        <div class="swiper-hero__slide swiper-slide">
+                            <picture>
+                                <source srcset="img/hero/mobile/hero-back-mobile_01.avif" media="(max-width:767.98px)"
+                                    type="image/avif">
+                                <source srcset="img/hero/mobile/hero-back-mobile_01.jpg" media="(max-width:767.98px)">
+
+                                <source srcset="img/hero/hero-back_01.avif" type="image/avif">
+                                <img fetchpriority="high" loading="eager" width="1440" height="822"
+                                    src="img/hero/hero-back_01.jpg" alt="about-us-back">
+                            </picture>
+                        </div>
+                        <div class="swiper-hero__slide swiper-slide">
+                            <picture>
+                                <source srcset="img/hero/mobile/hero-back-mobile_02.avif" media="(max-width:767.98px)"
+                                    type="image/avif">
+                                <source srcset="img/hero/mobile/hero-back-mobile_02.jpg" media="(max-width:767.98px)">
+
+                                <source srcset="img/hero/hero-back_02.avif" type="image/avif">
+                                <img loading="lazy" width="1440" height="822" src="img/hero/hero-back_02.jpg"
+                                    alt="about-us-back">
+                            </picture>
+                        </div>
+                        <div class="swiper-hero__slide swiper-slide">
+                            <picture>
+                                <source srcset="img/hero/mobile/hero-back-mobile_03.avif" media="(max-width:767.98px)"
+                                    type="image/avif">
+                                <source srcset="img/hero/mobile/hero-back-mobile_03.jpg" media="(max-width:767.98px)">
+
+                                <source srcset="img/hero/hero-back_03.avif" type="image/avif">
+                                <img loading="lazy" width="1440" height="822" src="img/hero/hero-back_03.jpg"
+                                    alt="about-us-back">
+                            </picture>
+                        </div>
+                        <div class="swiper-hero__slide swiper-slide">
+                            <picture>
+                                <source srcset="img/hero/mobile/hero-back-mobile_04.avif" media="(max-width:767.98px)"
+                                    type="image/avif">
+                                <source srcset="img/hero/mobile/hero-back-mobile_04.jpg" media="(max-width:767.98px)">
+
+                                <source srcset="img/hero/hero-back_04.avif" type="image/avif">
+                                <img loading="lazy" width="1440" height="822" src="img/hero/hero-back_04.jpg"
+                                    alt="about-us-back">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-hero__pagination swiper-pagination swiper-pagination-box"></div>
+                </div>
+                <div class="hero__container">
+                    <div class="hero__label label label-extra">Get to know us better</div>
+                    <h1 id="about-us-main-title" class="hero__title title title-white">discover our story</h1>
+
+                </div>
+            </section>
+            <div class="page__back-box">
+                <div class="page__back">
+                    <img src="img/about-us-page/main/background__line.svg" loading="lazy" alt="page-background">
+                </div>
+                <section class="our-story" aria-labelledby="our-story-title">
+                    <div class="our-story__header header-our-story">
+                        <div class="header-our-story__container">
+                            <div class="header-our-story__label label">Our story</div>
+                            <div class="header-our-story__body">
+                                <h2 id="our-story-title" class="header-our-story__title title " id="blog-latest-title">
+                                    How we’re
+                                    building the <span class="header-our-story__show-mobile">future</span></h2>
+                                <div class="header-our-story__show-desktop title">future</div>
+                                <div class="header-our-story__subtitle">We embody the spirit of harmony and
+                                    sustainability, crafting an unparalleled retreat that seamlessly integrates with
+                                    Madagascar's pristine coastline.
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="our-story__content content-our-story">
+                        <div class="content-our-story__container content-our-story__container-big">
+                            <div class="content-our-story__body">
+                                <div class="content-our-story__swiper swiper">
+                                    <div class="content-our-story__wrapper swiper-wrapper">
+                                        <div class="content-our-story__slide swiper-slide">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_02.avif"
+                                                    type="image/avif">
+                                                <img width="407" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_02.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                        <div class="content-our-story__slide swiper-slide">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_03.avif"
+                                                    type="image/avif">
+                                                <img width="616" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_03.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                        <div class="content-our-story__slide swiper-slide">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_01.avif"
+                                                    type="image/avif">
+                                                <img width="486" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_01.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                        <div class="content-our-story__slide swiper-slide">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_02.avif"
+                                                    type="image/avif">
+                                                <img width="407" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_02.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                        <div class="content-our-story__slide swiper-slide">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_03.avif"
+                                                    type="image/avif">
+                                                <img width="616" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_03.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                        <div class="content-our-story__slide swiper-slide">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_01.avif"
+                                                    type="image/avif">
+                                                <img width="486" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_01.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-story__sentence">
+                        <div class="our-story__container">
+                            <p>
+                                Our commitment to the environment is reflected in our use of rammed earth construction,
+                                a technique that not only
+                                complements the natural landscape but also enhances the beauty of the surrounding
+                                terrain...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="our-story__video">
+                        <div class="our-story__container our-story__container-big">
+                            <div class="video" data-js-video-player>
+                                <div class="video__wrapper">
+                                    <div class="video__poster ibg _active" data-js-video-player-poster>
+                                        <picture>
+                                            <source srcset="img/about-us-page/our-story/video-poster.avif" type="image/avif">
+                                            <img width="1440" height="860" loading="lazy" src="img/about-us-page/our-story/video-poster.jpg"
+                                                alt="video-poster">
+                                        </picture>
+                                    </div>
+                                    <video src="videos/sample.mp4" width="1440" height="860"
+                                        data-js-video-player-video
+                                        loading="lazy" preload="none"> </video>
+                                </div>
+                                <button aria-label="Play video" title="Play video" type="button"
+                                    data-js-video-player-button class="video__play _active">
+                                    <svg width="22" height="24" viewBox="0 0 22 24">
+                                        <use xlink:href='img/icons/icons-sprite.svg#play'></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="plases" aria-labelledby="plases-title">
+                    <div class="plases__header header-plases">
+                        <div class="header-plases__container">
+                            <div class="header-plases__label">Places</div>
+                            <h2 id="plases-title" class="header-plases__title title">Our resort</h2>
+                            <div class="header-plases__subtitile">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plases__content content-plases">
+                        <div class="content-plases__container content-plases__container-big">
+                            <article class="content-plases__item">
+                                <div class="content-plases__info">
+                                    <h3 class="content-plases__title">sWIMMING POOL</h3>
+                                    <div class="content-plases__subtitle">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam,
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-plases__decor">
+                                    <picture>
+                                        <source srcset="img/about-us-page/plases/plases__image_01.avif"
+                                            type="image/avif">
+                                        <img width="751" height="525" loading="lazy"
+                                            src="img/about-us-page/plases/plases__image_01.jpg" alt="about-us-plases">
+                                    </picture>
+                                </div>
+                            </article>
+                            <article class="content-plases__item content-plases__item-reverse">
+                                <div class="content-plases__info">
+                                    <h3 class="content-plases__title">Resort entrance</h3>
+                                    <div class="content-plases__subtitle">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et
+                                            dolore magna
+                                            aliqua. Ut enim ad minim veniam,
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-plases__decor">
+                                    <picture>
+                                        <source srcset="img/about-us-page/plases/plases__image_02.avif"
+                                            type="image/avif">
+                                        <img width="751" height="525" loading="lazy"
+                                            src="img/about-us-page/plases/plases__image_02.jpg" alt="about-us-plases">
+                                    </picture>
+                                </div>
+                            </article>
+                            <article class="content-plases__item">
+                                <div class="content-plases__info">
+                                    <h3 class="content-plases__title">Sauna & spa</h3>
+                                    <div class="content-plases__subtitle">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et
+                                            dolore magna
+                                            aliqua. Ut enim ad minim veniam,
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content-plases__decor">
+                                    <picture>
+                                        <source srcset="img/about-us-page/plases/plases__image_03.avif"
+                                            type="image/avif">
+                                        <img width="751" height="525" loading="lazy"
+                                            src="img/about-us-page/plases/plases__image_03.jpg" alt="about-us-plases">
+                                    </picture>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="about-us-story" aria-labelledby="about-us-story-title">
+                    <div class="about-us-story__container">
+                        <div class="about-us-story__decor decor-about-story">
+                            <div class="decor-about-story__swiper swiper">
+                                <div class="decor-about-story__wrapper swiper-wrapper">
+                                    <div class="decor-about-story__slide swiper-slide">
+                                        <picture>
+                                            <source
+                                                srcset="img/about-us-page/about-story/decor-about-story__image_01.avif"
+                                                type="image/avif">
+                                            <img width="730" height="818" loading="lazy"
+                                                src="img/about-us-page/about-story/decor-about-story__image_01.jpg"
+                                                alt="about-story-image">
+                                        </picture>
+                                    </div>
+                                    <div class="decor-about-story__slide swiper-slide">
+                                        <picture>
+                                            <source
+                                                srcset="img/about-us-page/about-story/decor-about-story__image_02.avif"
+                                                type="image/avif">
+                                            <img width="651" height="694" loading="lazy"
+                                                src="img/about-us-page/about-story/decor-about-story__image_02.avif"
+                                                alt="about-story-image">
+                                        </picture>
+                                    </div>
+                                    <div class="decor-about-story__slide swiper-slide">
+                                        <picture>
+                                            <source
+                                                srcset="img/about-us-page/about-story/decor-about-story__image_03.avif"
+                                                type="image/avif">
+                                            <img width="751" height="525" loading="lazy"
+                                                src="img/about-us-page/about-story/decor-about-story__image_03.avif"
+                                                alt="about-story-image">
+                                        </picture>
+                                    </div>
+                                    <div class="decor-about-story__slide swiper-slide">
+                                        <picture>
+                                            <source
+                                                srcset="img/about-us-page/about-story/decor-about-story__image_04.avif"
+                                                type="image/avif">
+                                            <img width="407" height="498" loading="lazy"
+                                                src="img/about-us-page/about-story/decor-about-story__image_04.avif"
+                                                alt="about-story-image">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-us-story__body body-about-story">
+                            <div class="body-about-story__header">
+                                <div class="body-about-story__lable label">Our story</div>
+                                <h2 class="body-about-story__title title" id="about-us-story-title">
+                                    Discover our
+                                    <span>accomodations</span>
+                                </h2>
+                            </div>
+                            <div class="body-about-story__content">
+                                <div class="body-about-story__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam,
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam,
+                                    </p>
+                                </div>
+                                <a href="" class="body-about-story__button link">
+                                    <span>Go to the accomodations</span>
+                                    <svg width="13" height="12" viewBox="0 0 13 12">
+                                        <use xlink:href='img/icons/icons-sprite.svg#arrow-right'></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="restaurant-about-us" aria-label="restaurant-about-title">
+                    <div class="restaurant-about-us__container">
+                        <div class="restaurant-about-us__header header-restaurant-about">
+                            <div class="header-restaurant-about__label label" id="restaurant-about-title">Restaurant
+                            </div>
+                            <h2 class="header-restaurant-about__title title">dINING IN</h2>
+                            <div class="header-restaurant-about__subtitle label">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </div>
+                        </div>
+                        <div class="restaurant-about-us__content content-restaurant-about">
+                            <div class="content-restaurant-about__nav  swiper-nav">
+                                <button type="button" class="swiper-nav__prev content-restaurant-about__prev">
+                                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#long-arrow__prev'></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="swiper-nav__next content-restaurant-about__next">
+                                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                        <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="content-restaurant-about__swiper swiper">
+                                <div class="content-restaurant-about__wrapper swiper-wrapper">
+                                    <div class="content-restaurant-about__slide swiper-slide">
+                                        <picture>
+                                            <source
+                                                srcset="img/about-us-page/restaurant-about-us/restaurant-about-us_image__01.avif"
+                                                type="image/avif">
+                                            <img width="518" height="618" loading="lazy"
+                                                src="img/about-us-page/restaurant-about-us/restaurant-about-us_image__01.jpg"
+                                                alt="restaurant-about-image">
+                                        </picture>
+                                    </div>
+                                    <div class="content-restaurant-about__slide swiper-slide">
+                                        <picture>
+                                            <source
+                                                srcset="img/about-us-page/restaurant-about-us/restaurant-about-us_image__02.avif"
+                                                type="image/avif">
+                                            <img width="518" height="618" loading="lazy"
+                                                src="img/about-us-page/restaurant-about-us/restaurant-about-us_image__02.jpg"
+                                                alt="restaurant-about-image">
+                                        </picture>
+                                    </div>
+                                    <div class="content-restaurant-about__slide swiper-slide">
+                                        <picture>
+                                            <source
+                                                srcset="img/about-us-page/restaurant-about-us/restaurant-about-us_image__01.avif"
+                                                type="image/avif">
+                                            <img width="518" height="618" loading="lazy"
+                                                src="img/about-us-page/restaurant-about-us/restaurant-about-us_image__01.jpg"
+                                                alt="restaurant-about-image">
+                                        </picture>
+                                    </div>
+                                    <div class="content-restaurant-about__slide swiper-slide">
+                                        <picture>
+                                            <source
+                                                srcset="img/about-us-page/restaurant-about-us/restaurant-about-us_image__02.avif"
+                                                type="image/avif">
+                                            <img width="518" height="618" loading="lazy"
+                                                src="img/about-us-page/restaurant-about-us/restaurant-about-us_image__02.jpg"
+                                                alt="restaurant-about-image">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="experience" aria-labelledby="experience-title">
+                    <div class="experience__header header-experience">
+                        <div class="header-experience__container">
+                            <div class="header-experience__body">
+                                <div class="header-experience__label label">Unique experience</div>
+                                <h2 class="header-experience__title title" id="experience-title">Stargazing
+                                    <span>night</span>
+                                </h2>
+                                <div class="header-experience__subtitle">
+                                    Plush furnishings and a knockout view create the perfect ambience for relaxing with
+                                    your
+                                    favorite libation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__content content-experience">
+                        <div class="content-experience__container content-experience__container-big">
+                            <div class="content-experience__swiper swiper">
+                                <div class="content-experience__wrapper swiper-wrapper">
+                                    <div class="content-experience__slide swiper-slide">
+                                        <div class="content-experience__image">
+                                            <picture>
+                                                <source srcset="img/about-us-page/experience/experience-image_02.avif"
+                                                    type="image/avif">
+                                                <img width="712" height="483" loading="lazy"
+                                                    src="img/about-us-page/experience/experience-image_02.jpg"
+                                                    alt="content-experience-image">
+                                            </picture>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="content-experience__slide swiper-slide">
+                                        <div class="content-experience__image">
+                                            <picture>
+                                                <source srcset="img/about-us-page/experience/experience-image_03.avif"
+                                                    type="image/avif">
+                                                <img width="712" height="483" loading="lazy"
+                                                    src="img/about-us-page/experience/experience-image_03.jpg"
+                                                    alt="content-experience-image">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="content-experience__slide swiper-slide">
+                                        <div class="content-experience__image">
+                                            <picture>
+                                                <source srcset="img/about-us-page/experience/experience-image_01.avif"
+                                                    type="image/avif">
+                                                <img width="712" height="483" loading="lazy"
+                                                    src="img/about-us-page/experience/experience-image_01.jpg"
+                                                    alt="content-experience-image">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="content-experience__slide swiper-slide">
+                                        <div class="content-experience__image">
+                                            <picture>
+                                                <source srcset="img/about-us-page/experience/experience-image_02.avif"
+                                                    type="image/avif">
+                                                <img width="712" height="483" loading="lazy"
+                                                    src="img/about-us-page/experience/experience-image_02.jpg"
+                                                    alt="content-experience-image">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="content-experience__slide swiper-slide">
+                                        <div class="content-experience__image">
+                                            <picture>
+                                                <source srcset="img/about-us-page/experience/experience-image_03.avif"
+                                                    type="image/avif">
+                                                <img width="712" height="483" loading="lazy"
+                                                    src="img/about-us-page/experience/experience-image_03.jpg"
+                                                    alt="content-experience-image">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="content-experience__slide swiper-slide">
+                                        <div class="content-experience__image">
+                                            <picture>
+                                                <source srcset="img/about-us-page/experience/experience-image_01.avif"
+                                                    type="image/avif">
+                                                <img width="712" height="483" loading="lazy"
+                                                    src="img/about-us-page/experience/experience-image_01.jpg"
+                                                    alt="content-experience-image">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__footer footer-experience">
+                        <div class="footer-experience__container">
+                            <div class="footer-experience__text">
+                                <p>
+                                    The pisé bar offers a sophisticated array of cocktails and imported whiskeys and
+                                    wines, as well as regional beers and
+                                    the local tipple for which the bat is named. Our mixologists' have created inspired
+                                    cocktails that incorporate spices,
+                                    herbs, and spirits sourced from nearby.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="description">
+                    <div class="description__container">
+                        <div class="description__body">
+                            <article class="description__item">
+                                <div class="description__decor">
+                                    <picture>
+                                        <source srcset="img/about-us-page/description/description-image_01.avif"
+                                            type="image/avif">
+                                        <img width="649" height="694" loading="lazy"
+                                            src="img/about-us-page/description/description-image_01.jpg"
+                                            alt="description-image">
+                                    </picture>
+                                </div>
+                                <div class="description__content">
+                                    <h3 class="description__title title title-medium">Stargazing night</h3>
+                                    <div class="description__text">
+                                        <p>
+                                            The pisé bar offers a sophisticated array of cocktails and imported whiskeys
+                                            and wines, as well as regional beers and
+                                            the local tipple for which the bat is named.
+                                        </p>
+                                        <p>
+                                            Our mixologists' have created inspired cocktails that incorporate spices,
+                                            herbs, and spirits sourced from nearby.
+                                        </p>
+                                    </div>
+                                    <div class="description__contacts">
+                                        <div class="description__row">Everyday: <time datetime="6:00">6:00 AM</time> - <time datetime="10:00">10:00 AM</time>, <time datetime="17:00">5:00 PM</time> - <time datetime="21:00">9:00 PM</time>
+                                        </div>
+                                        <div class="description__row">
+                                            Phone: <a href="tel:+731234114560">+73 123 411 4560</a>
+                                        </div>
+                                    </div>
+                                    <a href="" class="description__button">
+                                        Book Now
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="description__item description__item-reverse">
+                                <div class="description__decor">
+                                    <picture>
+                                        <source srcset="img/about-us-page/description/description-image_02.avif" type="image/avif">
+                                        <img width="649" height="694" loading="lazy" src="img/about-us-page/description/description-image_02.jpg"
+                                            alt="description-image">
+                                    </picture>
+                                </div>
+                                <div class="description__content">
+                                    <h3 class="description__title title title-medium ">Hechizo restaurant</h3>
+                                    <div class="description__text">
+                                        <p>
+                                            Indulge your senses at our stunning restaurant, where exquisite flavors meet breathtaking views!
+                                        </p>
+                                        <p>
+                                            Enjoy a culinary journey crafted from the freshest local ingredients, paired with the finest wines to elevate your
+                                            dining experience.
+                                        </p>
+                                    </div>
+                                    <div class="description__contacts">
+                                        <div class="description__row">Everyday: <time datetime="6:00">6:00 AM</time> - <time datetime="10:00">10:00
+                                                AM</time>, <time datetime="17:00">5:00 PM</time> - <time datetime="21:00">9:00 PM</time>
+                                        </div>
+                                        <div class="description__row">
+                                            Phone: <a href="tel:+731234114560">+73 123 411 4560</a>
+                                        </div>
+                                    </div>
+                                    <a href="" class="description__button">
+                                        Book Now
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="map">
+                    <div class="map__container map__container-big">
+                        <div class="map__body">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7737931.419836678!2d41.57484867127143!3d-18.74072101835929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21d1a4e3ea238545%3A0x5244e3c1977b1388!2sMadagascar!5e0!3m2!1sen!2sua!4v1737045211408!5m2!1sen!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__info info-footer">
+                    <a href="/" class="info-footer__logo" aria-label="link homepage"><img loading="lazy"
+                            src="img/main/logo-dark.svg" alt="logo"></a>
+                    <form action="#" class="info-footer__form">
+                        <input type="email" placeholder="Your email:" class="info-footer__input">
+                        <button class="info-footer__button link">
+                            <span>Subscribe to the newsletter</span>
+                            <svg width="13" height="12" viewBox="0 0 13 12">
+                                <use xlink:href='img/icons/icons-sprite.svg#arrow-right'></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <nav class='footer__menu footer-menu'>
+                    <div class="footer-menu__label label">Menu</div>
+                    <ul class='footer-menu__list'>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Homepage</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>About us</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Activities</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Accomodations</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts contacts-footer">
+                    <div class="contacts-footer__label label">Contact information</div>
+                    <address class="contacts-footer__address">
+                        <span class="contacts-footer__location">Haiti street, luxury azul resort Madagascar</span>
+                        <a href="mailto:azul@gmail.com" class="contacts-footer__email">azul@gmail.com</a>
+                        <a href="tel:+731234114560" class="contacts-footer__number">+73 123 411 4560</a>
+                    </address>
+                </div>
+                <div class="footer__socials socials-footer">
+                    <a href="" aria-label="dribble" class="socials-footer__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_01'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="twitter" class="socials-footer__item">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_02'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="youtube" class="socials-footer__item">
+                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_03'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="instagram" class="socials-footer__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_04'></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__empty"></div>
+                <div class="footer__copy">© 2024 Luminous. All rights reserved</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swipers.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

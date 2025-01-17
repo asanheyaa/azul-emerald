@@ -1,0 +1,111 @@
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+:root {
+  --color-primary: #51514d;
+  --color-secondary: #664914;
+  --colorWhite: #ffffff;
+  --colorGreen: #00474b;
+  --colorLabels: #51514d;
+  --borderColor: #d7d3d0;
+  --mainBack: #f6f8f3;
+  --secondaryBack: #eff2eb;
+  --transparentBack: rgba(217, 217, 217, 0.01);
+  --hoverBack: rgba(255, 255, 255, 0.3);
+  --blur: blur(20px);
+  --titleSize: 34px;
+  --mainSize: 18px;
+  --smallSize: 14px;
+}
+
+.page__back img {
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+.hero {
+  position: relative;
+  padding-top: 285px;
+  padding-bottom: 255px;
+}
+@media (max-width: 1330px) {
+  .hero {
+    padding-top: calc(150px + 135 * (100vw - 320px) / 1010);
+  }
+}
+@media (max-width: 1330px) {
+  .hero {
+    padding-bottom: calc(100px + 155 * (100vw - 320px) / 1010);
+  }
+}
+.hero__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.hero__container {
+  position: relative;
+  z-index: 2;
+}
+.hero__label {
+  margin-bottom: 26px;
+}
+.hero__title {
+  margin-bottom: 41px;
+}
+@media (max-width: 1330px) {
+  .hero__title {
+    margin-bottom: calc(30px + 11 * (100vw - 320px) / 1010);
+  }
+}
+.article {
+  padding-top: 100px;
+  padding-bottom: 76px;
+}
+@media (max-width: 1330px) {
+  .article {
+    padding-top: calc(70px + 30 * (100vw - 320px) / 1010);
+  }
+}
+@media (max-width: 1330px) {
+  .article {
+    padding-bottom: calc(50px + 26 * (100vw - 320px) / 1010);
+  }
+}
+.article__container > :not(:last-child) {
+  margin-bottom: 94px;
+}
+@media (max-width: 1330px) {
+  .article__container > :not(:last-child) {
+    margin-bottom: calc(50px + 44 * (100vw - 320px) / 1010);
+  }
+}
+.article__title {
+  text-align: center;
+  margin-bottom: 13px;
+}
+.article__title.title-small {
+  margin-bottom: 26px;
+}
+.article__image-box {
+  text-align: center;
+}
+.article__image {
+  display: inline-block;
+}
+.article__image::after {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(72.913%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9))), rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 72.913%, rgba(0, 0, 0, 0.9) 100%), rgba(0, 0, 0, 0.2);
+}
+.article__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 991.98px) {
+  .article__image img {
+    height: auto;
+  }
+}

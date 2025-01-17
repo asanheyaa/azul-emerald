@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hotel">
+    <script src="js/font-loader.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main-styles.min.css">
+    <link rel="stylesheet" href="css/blog-page-styles.min.css">
+    <title>Azul Emerald | Blog</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <button type="button" aria-label="burger-button" class="header__burger burger">
+                    <span class="burger__line burger__line_01"></span>
+                    <span class="burger__line burger__line_02"></span>
+                </button>
+                <a href="/" aria-label="link homepage" class="header__logo"><img width="194" height="52"
+                        src="img/main/logo.svg" alt="logo"></a>
+                <div class="header__menu-wrapper">
+                    <nav class='header__menu header-menu'>
+                        <ul class='header-menu__list'>
+                            <li class='header-menu__item'>
+                                <a href='/' class='header-menu__link'>Homepage</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='about-us.html' class='header-menu__link'>About us</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='/' class='header-menu__link'>Activities</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='/' class='header-menu__link'>Accomodations</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='./blog.html' class='header-menu__link'>Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions">
+                    <div class="header__select select" data-select-menu>
+                        <button class="select__header" type="button" aria-label="choose language"
+                            data-select-menu-button>
+                            <span class="select__value" data-select-menu-value>En</span>
+                            <span class="select__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#arrow-bottom'></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="select__body" data-select-menu-drop-down>
+                            <li class="select__item" data-select-menu-option><span>En</span></li>
+                            <li class="select__item" data-select-menu-option><span>Ua</span></li>
+                        </ul>
+                    </div>
+                    <div class="header__buttons" data-da=".header__menu-wrapper,1200,last">
+                        <a href="" class="header__button header__button-back">Sign in</a>
+                        <a href="" class="header__button header__button-transparent">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section aria-labelledby="blog-title" class="hero hero-extra">
+                <div class="hero__background ibg shadow">
+                    <picture>
+                        <source srcset="img/blog-page/hero/mobile/hero_background_mobile.avif"
+                            media="(max-width:767.98px)" type="image/avif">
+                        <source srcset="img/blog-page/hero/mobile/hero_background_mobile.jpg"
+                            media="(max-width:767.98px)">
+
+                        <source srcset="img/blog-page/hero/hero_background.avif" type="image/avif">
+                        <img width="1440" height="634" loading="eager" src="img/blog-page/hero/hero_background.jpg"
+                            alt="blog-latest-image">
+                    </picture>
+                </div>
+                <div class="hero__container">
+                    <div class="hero__label label label-extra">Get all the information needed</div>
+                    <h1 class="hero__title title title-white" id="blog-title">Our personal blog</h1>
+                </div>
+            </section>
+            <div class="page__back-box">
+                <div class="page__back">
+                    <img src="img/main/line-decor-blog-page.svg" loading="lazy" alt="page-background">
+                </div>
+                <section aria-labelledby="blog-latest-title" class="blog-latest">
+                    <div class="blog-latest__header header-blog-latest">
+                        <div class="header-blog-latest__container">
+                            <div class="header-blog-latest__label label">Blog - lates</div>
+                            <div class="header-blog-latest__body">
+                                <h2 class="header-blog-latest__title title " id="blog-latest-title">Lates updates from
+                                    <span class="header-blog-latest__show-mobile">Azul Emerald</span>
+                                </h2>
+                                <div class="header-blog-latest__show-desktop title">Azul Emerald</div>
+                                <div class="header-blog-latest__subtitle">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Doloremque tenetur quis ducimus?</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="blog-latest__body">
+                        <div class="blog-latest__container blog-latest__container-big">
+                            <div class="blog-latest__wrapper">
+                                <div class="blog-latest__swiper swiper-blog-latest swiper">
+                                    <div class="swiper-blog-latest__wrapper swiper-wrapper">
+
+                                        <div class="swiper-blog-latest__slide swiper-slide">
+                                            <div class="swiper-blog-latest__body shadow">
+                                                <div class="swiper-blog-latest__image ibg">
+                                                    <picture>
+                                                        <source srcset="img/blog-page/blog-latest/blog-latest_02.avif"
+                                                            type="image/avif">
+                                                        <img loading="lazy" width="739" height="480"
+                                                            src="img/blog-page/blog-latest/blog-latest_02.jpg"
+                                                            alt="blog-latest-image">
+                                                    </picture>
+                                                </div>
+                                                <div
+                                                    class="swiper-blog-latest__bottom swiper-footer swiper-footer-hide-link swiper-footer-doble">
+                                                    <a href="" class="swiper-footer__link ">New rooms available in our
+                                                        resort</a>
+                                                    <a href=""
+                                                        class="swiper-footer__button button button-smaller-padding">Read
+                                                        more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-blog-latest__slide swiper-slide">
+                                            <div class="swiper-blog-latest__body shadow">
+                                                <div class="swiper-blog-latest__image ibg">
+                                                    <picture>
+                                                        <source srcset="img/blog-page/blog-latest/blog-latest_03.avif"
+                                                            type="image/avif">
+                                                        <img loading="lazy" width="739" height="480"
+                                                            src="img/blog-page/blog-latest/blog-latest_03.jpg"
+                                                            alt="blog-latest-image">
+                                                    </picture>
+                                                </div>
+                                                <div
+                                                    class="swiper-blog-latest__bottom swiper-footer swiper-footer-hide-link swiper-footer-doble">
+                                                    <a href="" class="swiper-footer__link ">Check out the new gall</a>
+                                                    <a href=""
+                                                        class="swiper-footer__button button button-smaller-padding">Read
+                                                        more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-blog-latest__slide swiper-slide">
+                                            <div class="swiper-blog-latest__body shadow">
+                                                <div class="swiper-blog-latest__image ibg">
+                                                    <picture>
+                                                        <source srcset="img/blog-page/blog-latest/blog-latest_01.avif"
+                                                            type="image/avif">
+                                                        <img loading="lazy" width="739" height="480"
+                                                            src="img/blog-page/blog-latest/blog-latest_01.jpg"
+                                                            alt="blog-latest-image">
+                                                    </picture>
+                                                </div>
+                                                <div
+                                                    class="swiper-blog-latest__bottom swiper-footer swiper-footer-hide-link swiper-footer-doble">
+                                                    <a href="" class="swiper-footer__link ">The menu is better than
+                                                        ever</a>
+                                                    <a href=""
+                                                        class="swiper-footer__button button button-smaller-padding">Read
+                                                        more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-blog-latest__slide swiper-slide">
+                                            <div class="swiper-blog-latest__body shadow">
+                                                <div class="swiper-blog-latest__image ibg">
+                                                    <picture>
+                                                        <source srcset="img/blog-page/blog-latest/blog-latest_02.avif"
+                                                            type="image/avif">
+                                                        <img loading="lazy" width="739" height="480"
+                                                            src="img/blog-page/blog-latest/blog-latest_02.jpg"
+                                                            alt="blog-latest-image">
+                                                    </picture>
+                                                </div>
+                                                <div
+                                                    class="swiper-blog-latest__bottom swiper-footer swiper-footer-hide-link swiper-footer-doble">
+                                                    <a href="" class="swiper-footer__link ">New rooms available in our
+                                                        resort</a>
+                                                    <a href=""
+                                                        class="swiper-footer__button button button-smaller-padding">Read
+                                                        more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-blog-latest__slide swiper-slide">
+                                            <div class="swiper-blog-latest__body shadow">
+                                                <div class="swiper-blog-latest__image ibg">
+                                                    <picture>
+                                                        <source srcset="img/blog-page/blog-latest/blog-latest_03.avif"
+                                                            type="image/avif">
+                                                        <img loading="lazy" width="739" height="480"
+                                                            src="img/blog-page/blog-latest/blog-latest_03.jpg"
+                                                            alt="blog-latest-image">
+                                                    </picture>
+                                                </div>
+                                                <div
+                                                    class="swiper-blog-latest__bottom swiper-footer swiper-footer-hide-link swiper-footer-doble">
+                                                    <a href="" class="swiper-footer__link ">Check out the new gall</a>
+                                                    <a href=""
+                                                        class="swiper-footer__button button button-smaller-padding">Read
+                                                        more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-blog-latest__slide swiper-slide">
+                                            <div class="swiper-blog-latest__body shadow">
+                                                <div class="swiper-blog-latest__image ibg">
+                                                    <picture>
+                                                        <source srcset="img/blog-page/blog-latest/blog-latest_01.avif"
+                                                            type="image/avif">
+                                                        <img width="739" height="480" loading="lazy"
+                                                            src="img/blog-page/blog-latest/blog-latest_01.jpg"
+                                                            alt="blog-latest-image">
+                                                    </picture>
+                                                </div>
+                                                <div
+                                                    class="swiper-blog-latest__bottom swiper-footer swiper-footer-hide-link swiper-footer-doble">
+                                                    <a href="" class="swiper-footer__link ">The menu is better than
+                                                        ever</a>
+                                                    <a href=""
+                                                        class="swiper-footer__button button button-smaller-padding">Read
+                                                        more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section aria-labelledby="articles-title" class="articles">
+                    <div class="articles__container">
+                        <div class="articles__header header-articles">
+                            <div class="header-articles__label label">Discover everything that you want</div>
+                            <h2 class="header-articles__title title" id="articles-title">Main section</h2>
+                            <div class="header-articles__subtitle">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tenetur quis
+                                ducimus?
+                            </div>
+                        </div>
+                        <div class="articles__body" data-filter>
+                            <div class="articles__nav nav-articles">
+                                <ul class="nav-articles__list">
+                                    <li class="nav-articles__item">
+                                        <button class="nav-articles__button button button-green _active"
+                                            data-filter-category="all" type="button">All</button>
+                                    </li>
+                                    <li class="nav-articles__item">
+                                        <button class="nav-articles__button button button-green"
+                                            data-filter-category="updates" type="button">Updates</button>
+                                    </li>
+                                    <li class="nav-articles__item">
+                                        <button class="nav-articles__button button button-green"
+                                            data-filter-category="rooms" type="button">Rooms</button>
+                                    </li>
+                                    <li class="nav-articles__item">
+                                        <button class="nav-articles__button button button-green"
+                                            data-filter-category="food" type="button">Food</button>
+                                    </li>
+                                    <li class="nav-articles__item">
+                                        <button class="nav-articles__button button button-green"
+                                            data-filter-category="lorem" type="button">Lorem</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="articles__content content-articles">
+                                <article data-filter-content="updates" class="content-articles__item _show">
+                                    <a href="" class="content-articles__body shadow shadow-on-hover">
+                                        <div class="content-articles__image ibg">
+                                            <picture>
+                                                <source srcset="img/blog-page/articles/article_image_01.avif"
+                                                    type="image/avif">
+                                                <img width="400" height="405" loading="lazy"
+                                                    src="img/blog-page/articles/article_image_01.jpg"
+                                                    alt="blog-latest-image">
+                                            </picture>
+                                        </div>
+                                        <div class="content-articles__icon">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="content-articles__text">
+                                        <a href="" class="content-articles__link">
+                                            <h3 class="content-articles__title">Garden view room</h3>
+                                        </a>
+                                        <div class="content-articles__subtitle">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Doloremque tenetur quis ducimus?</div>
+                                    </div>
+                                    <div class="content-articles__footer">
+                                        <div class="content-articles__date"><time datetime="2024-12-23"></time>23
+                                            december 2024</div>
+                                        <div class="content-articles__category">Updates</div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="rooms" class="content-articles__item _show">
+                                    <a href="" class="content-articles__body shadow shadow-on-hover">
+                                        <div class="content-articles__image ibg">
+                                            <picture>
+                                                <source srcset="img/blog-page/articles/article_image_02.avif"
+                                                    type="image/avif">
+                                                <img width="400" height="405" loading="lazy"
+                                                    src="img/blog-page/articles/article_image_02.jpg"
+                                                    alt="blog-latest-image">
+                                            </picture>
+                                        </div>
+                                        <div class="content-articles__icon">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="content-articles__text">
+                                        <a href="" class="content-articles__link">
+                                            <h3 class="content-articles__title">Garden view room</h3>
+                                        </a>
+                                        <div class="content-articles__subtitle">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Doloremque tenetur quis ducimus?</div>
+                                    </div>
+                                    <div class="content-articles__footer">
+                                        <div class="content-articles__date"><time datetime="2024-12-23"></time>23
+                                            december 2024</div>
+                                        <div class="content-articles__category">Rooms</div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="food" class="content-articles__item _show">
+                                    <a href="" class="content-articles__body shadow shadow-on-hover">
+                                        <div class="content-articles__image ibg">
+                                            <picture>
+                                                <source srcset="img/blog-page/articles/article_image_03.avif"
+                                                    type="image/avif">
+                                                <img width="400" height="405" loading="lazy"
+                                                    src="img/blog-page/articles/article_image_03.jpg"
+                                                    alt="blog-latest-image">
+                                            </picture>
+                                        </div>
+                                        <div class="content-articles__icon">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="content-articles__text">
+                                        <a href="" class="content-articles__link">
+                                            <h3 class="content-articles__title">Garden view room</h3>
+                                        </a>
+                                        <div class="content-articles__subtitle">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Doloremque tenetur quis ducimus?</div>
+                                    </div>
+                                    <div class="content-articles__footer">
+                                        <div class="content-articles__date"><time datetime="2024-12-23"></time>23
+                                            december 2024</div>
+                                        <div class="content-articles__category">Food</div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="updates" class="content-articles__item _show">
+                                    <a href="" class="content-articles__body shadow shadow-on-hover">
+                                        <div class="content-articles__image ibg">
+                                            <picture>
+                                                <source srcset="img/blog-page/articles/article_image_04.avif"
+                                                    type="image/avif">
+                                                <img width="400" height="405" loading="lazy"
+                                                    src="img/blog-page/articles/article_image_04.jpg"
+                                                    alt="blog-latest-image">
+                                            </picture>
+                                        </div>
+                                        <div class="content-articles__icon">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="content-articles__text">
+                                        <a href="" class="content-articles__link">
+                                            <h3 class="content-articles__title">Garden view room</h3>
+                                        </a>
+                                        <div class="content-articles__subtitle">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Doloremque tenetur quis ducimus?</div>
+                                    </div>
+                                    <div class="content-articles__footer">
+                                        <div class="content-articles__date"><time datetime="2024-12-23"></time>23
+                                            december 2024</div>
+                                        <div class="content-articles__category">Updates</div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="rooms" class="content-articles__item _show">
+                                    <a href="" class="content-articles__body shadow shadow-on-hover">
+                                        <div class="content-articles__image ibg">
+                                            <picture>
+                                                <source srcset="img/blog-page/articles/article_image_05.avif"
+                                                    type="image/avif">
+                                                <img width="400" height="405" loading="lazy"
+                                                    src="img/blog-page/articles/article_image_05.jpg"
+                                                    alt="blog-latest-image">
+                                            </picture>
+                                        </div>
+                                        <div class="content-articles__icon">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="content-articles__text">
+                                        <a href="" class="content-articles__link">
+                                            <h3 class="content-articles__title">Garden view room</h3>
+                                        </a>
+                                        <div class="content-articles__subtitle">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Doloremque tenetur quis ducimus?</div>
+                                    </div>
+                                    <div class="content-articles__footer">
+                                        <div class="content-articles__date"><time datetime="2024-12-23"></time>23
+                                            december 2024</div>
+                                        <div class="content-articles__category">Rooms</div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="food" class="content-articles__item _show">
+                                    <a href="" class="content-articles__body shadow shadow-on-hover">
+                                        <div class="content-articles__image ibg">
+                                            <picture>
+                                                <source srcset="img/blog-page/articles/article_image_06.avif"
+                                                    type="image/avif">
+                                                <img width="400" height="405" loading="lazy"
+                                                    src="img/blog-page/articles/article_image_06.jpg"
+                                                    alt="blog-latest-image">
+                                            </picture>
+                                        </div>
+                                        <div class="content-articles__icon">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="content-articles__text">
+                                        <a href="" class="content-articles__link">
+                                            <h3 class="content-articles__title">Garden view room</h3>
+                                        </a>
+                                        <div class="content-articles__subtitle">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Doloremque tenetur quis ducimus?</div>
+                                    </div>
+                                    <div class="content-articles__footer">
+                                        <div class="content-articles__date"><time datetime="2024-12-23"></time>23
+                                            december 2024</div>
+                                        <div class="content-articles__category">Food</div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="lorem" class="content-articles__item _show">
+                                    <a href="" class="content-articles__body shadow shadow-on-hover">
+                                        <div class="content-articles__image ibg">
+                                            <picture>
+                                                <source srcset="img/blog-page/articles/article_image_07.avif"
+                                                    type="image/avif">
+                                                <img width="400" height="405" loading="lazy"
+                                                    src="img/blog-page/articles/article_image_07.jpg"
+                                                    alt="blog-latest-image">
+                                            </picture>
+                                        </div>
+                                        <div class="content-articles__icon">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="content-articles__text">
+                                        <a href="" class="content-articles__link">
+                                            <h3 class="content-articles__title">Garden view room</h3>
+                                        </a>
+                                        <div class="content-articles__subtitle">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Doloremque tenetur quis ducimus?</div>
+                                    </div>
+                                    <div class="content-articles__footer">
+                                        <div class="content-articles__date"><time datetime="2024-12-23"></time>23
+                                            december 2024</div>
+                                        <div class="content-articles__category">Lorem</div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="lorem" class="content-articles__item _show">
+                                    <a href="" class="content-articles__body shadow shadow-on-hover">
+                                        <div class="content-articles__image ibg">
+                                            <picture>
+                                                <source srcset="img/blog-page/articles/article_image_08.avif"
+                                                    type="image/avif">
+                                                <img width="400" height="405" loading="lazy"
+                                                    src="img/blog-page/articles/article_image_08.jpg"
+                                                    alt="blog-latest-image">
+                                            </picture>
+                                        </div>
+                                        <div class="content-articles__icon">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="content-articles__text">
+                                        <a href="" class="content-articles__link">
+                                            <h3 class="content-articles__title">Garden view room</h3>
+                                        </a>
+                                        <div class="content-articles__subtitle">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Doloremque tenetur quis ducimus?</div>
+                                    </div>
+                                    <div class="content-articles__footer">
+                                        <div class="content-articles__date"><time datetime="2024-12-23"></time>23
+                                            december 2024</div>
+                                        <div class="content-articles__category">Lorem</div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="lorem" class="content-articles__item _show">
+                                    <a href="" class="content-articles__body shadow shadow-on-hover">
+                                        <div class="content-articles__image ibg">
+                                            <picture>
+                                                <source srcset="img/blog-page/articles/article_image_09.avif"
+                                                    type="image/avif">
+                                                <img width="400" height="405" loading="lazy"
+                                                    src="img/blog-page/articles/article_image_09.jpg"
+                                                    alt="blog-latest-image">
+                                            </picture>
+                                        </div>
+                                        <div class="content-articles__icon">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="content-articles__text">
+                                        <a href="" class="content-articles__link">
+                                            <h3 class="content-articles__title">Garden view room</h3>
+                                        </a>
+                                        <div class="content-articles__subtitle">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Doloremque tenetur quis ducimus?</div>
+                                    </div>
+                                    <div class="content-articles__footer">
+                                        <div class="content-articles__date"><time datetime="2024-12-23"></time>23
+                                            december 2024</div>
+                                        <div class="content-articles__category">Lorem</div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="articles__footer footer-articles">
+                            <button class="footer-articles__button" type="button"> Load more</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__info info-footer">
+                    <a href="/" class="info-footer__logo" aria-label="link homepage"><img loading="lazy"
+                            src="img/main/logo-dark.svg" alt="logo"></a>
+                    <form action="#" class="info-footer__form">
+                        <input type="email" placeholder="Your email:" class="info-footer__input">
+                        <button class="info-footer__button link">
+                            <span>Subscribe to the newsletter</span>
+                            <svg width="13" height="12" viewBox="0 0 13 12">
+                                <use xlink:href='img/icons/icons-sprite.svg#arrow-right'></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <nav class='footer__menu footer-menu'>
+                    <div class="footer-menu__label label">Menu</div>
+                    <ul class='footer-menu__list'>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Homepage</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>About us</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Activities</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Accomodations</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts contacts-footer">
+                    <div class="contacts-footer__label label">Contact information</div>
+                    <address class="contacts-footer__address">
+                        <span class="contacts-footer__location">Haiti street, luxury azul resort Madagascar</span>
+                        <a href="mailto:azul@gmail.com" class="contacts-footer__email">azul@gmail.com</a>
+                        <a href="tel:+731234114560" class="contacts-footer__number">+73 123 411 4560</a>
+                    </address>
+                </div>
+                <div class="footer__socials socials-footer">
+                    <a href="" aria-label="dribble" class="socials-footer__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_01'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="twitter" class="socials-footer__item">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_02'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="youtube" class="socials-footer__item">
+                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_03'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="instagram" class="socials-footer__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_04'></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__empty"></div>
+                <div class="footer__copy">© 2024 Luminous. All rights reserved</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swipers.min.js"></script>
+    <script src="js/script.min.js"></script>
+
+</body>
+
+</html>

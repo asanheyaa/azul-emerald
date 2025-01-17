@@ -1,0 +1,272 @@
+$containerWidth: 1330;
+
+@import "mixins.scss";
+
+:root {
+	--color-primary: #51514d;
+	--color-secondary: #664914;
+	--colorWhite: #ffffff;
+	--colorGreen: #00474b;
+	--colorLabels: #51514d;
+	--borderColor: #d7d3d0;
+
+	--mainBack: #f6f8f3;
+	--secondaryBack: #eff2eb;
+	--transparentBack: rgba(217, 217, 217, 0.01);
+	--hoverBack: rgba(255, 255, 255, 0.3);
+
+	--blur: blur(20px);
+
+	--titleSize: 34px;
+	--mainSize: 18px;
+	--smallSize: 14px;
+}
+
+//==========================================================================================================================================================
+
+.hero {
+	position: relative;
+	@include adaptiveValue(padding-top, 274, 150);
+	@include adaptiveValue(padding-bottom, 298, 100);
+	&-extra {
+		@include adaptiveValue(padding-top, 285, 150);
+		@include adaptiveValue(padding-bottom, 255, 100);
+	}
+	&__swiper {
+	}
+
+	&__container {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__label {
+		margin-bottom: 26px;
+	}
+
+	&__title {
+		@include adaptiveValue(margin-bottom, 41, 30);
+	}
+
+	&__form {
+	}
+}
+.swiper-hero {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	&__wrapper {
+	}
+
+	&__slide {
+		width: 100%;
+		img,
+		picture,
+		video,
+		source {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+}
+
+.hero-form {
+	max-width: 607px;
+	margin: 0 auto;
+	display: flex;
+	gap: 14px;
+	@media (max-width: 767.98px) {
+		flex-direction: column;
+		max-width: 500px;
+	}
+	&__input {
+		flex: 0 1 50%;
+		backdrop-filter: blur(3px);
+		background: rgba(255, 255, 255, 0.15);
+		padding: 7px 17px;
+		color: rgb(255, 255, 255);
+		font-size: 16px;
+		line-height: 150%; /* 24/16 */
+		&::placeholder {
+			color: var(--colorWhite);
+		}
+	}
+
+	&__button {
+		flex: 0 1 50%;
+		padding: 7px 34px;
+	}
+}
+
+//==========================================================================================================================================================
+.story {
+	@include adaptiveValue(padding-top, 111, 70);
+}
+.header-story {
+	margin-bottom: 30px;
+	&__container {
+		display: grid;
+		align-items: start;
+		grid-template-areas:
+			"datails actions"
+			"info info";
+		column-gap: 30px;
+		@media (max-width: 991.98px) {
+			grid-template-areas:
+				"datails "
+				"info "
+				"actions";
+		}
+	}
+
+	&__details {
+		grid-area: datails;
+	}
+
+	&__label {
+		margin-bottom: 19px;
+	}
+
+	&__title {
+	}
+
+	&__actions {
+		grid-area: actions;
+		display: flex;
+		@include adaptiveValue(gap, 45, 20);
+		margin-top: 30px;
+		@media (min-width: 991.98px) {
+			margin-top: 60px;
+		}
+		@media (max-width: 500px) {
+			flex-direction: column;
+			gap: 15px;
+		}
+	}
+
+	&__link {
+		color: var(--color-primary);
+		font-size: var(--smallSize);
+		line-height: 178.571429%; /* 25/14 */
+		transition: all 0.3s ease 0s;
+		@media (min-width: 991.98px) {
+			text-wrap: nowrap;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--color-secondary);
+			}
+		}
+	}
+
+	&__link-location {
+		background: url(../img/icons/location.svg) left 3px / 13px 17px no-repeat;
+		padding-left: 22px;
+	}
+
+	&__info {
+		grid-area: info;
+		max-width: 758px;
+		@media (min-width: 991.98px) {
+			margin-left: 87px;
+		}
+	}
+}
+
+.story-middle {
+	@include adaptiveValue(padding-block, 60, 30);
+	background: var(--secondaryBack);
+	@include adaptiveValue(margin-bottom, 44, 40);
+	&__container-big {
+	}
+
+	&__swiper {
+	}
+}
+.swiper-story {
+	direction: rtl;
+
+	&__wrapper {
+	}
+
+	&__slide {
+		padding-bottom: 53.6%;
+		@media (min-width: 992px) {
+			padding-bottom: 34.6%;
+		}
+	}
+
+	&__pagination.swiper-pagination {
+		direction: ltr;
+		@media (min-width: 991.98px) {
+			bottom: 23px;
+			width: unset;
+			left: 63.54%;
+		}
+	}
+}
+
+.footer-story {
+	&__container {
+	}
+
+	&__body {
+		max-width: 758px;
+		margin-left: auto;
+	}
+
+	&__info {
+		margin-bottom: 30px;
+	}
+
+	&__link {
+	}
+}
+
+//==========================================================================================================================================================
+.card {
+	@include adaptiveValue(padding-top, 114, 70);
+	@include adaptiveValue(padding-bottom, 114, 70);
+	&__container {
+	}
+
+	&__container-big {
+		@include adaptiveValue(padding-block, 292, 100);
+		position: relative;
+	}
+
+	&__background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	&__body {
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		@include adaptiveValue(padding, 62, 15);
+		border: 2px solid var(--colorWhite);
+		max-width: 985px;
+		margin: 0 auto;
+	}
+
+	&__title {
+	}
+
+	&__subtitle {
+		color: var(--colorWhite);
+		line-height: 155.555556%; /* 28/18 */
+	}
+}

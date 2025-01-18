@@ -307,7 +307,11 @@ function filterFunction() {
 					filterSections.forEach(filterSection => {
 						if (filterSection.classList.contains('_show')) {
 							filterSection.classList.remove('_show')
+						} 
+						if (filterSection.classList.contains('_last-child')) {
+							filterSection.classList.remove('_last-child')
 						}
+						
 					});
 
 					filterButtons.forEach(filterButton => {
@@ -316,21 +320,25 @@ function filterFunction() {
 						}
 					});
 
-
-
 					let seflButton = e.target,
 						buttonId = seflButton.dataset.filterCategory
 
 					if (buttonId === 'all') {
-						filterSections.forEach(filterSection => {
+						filterSections.forEach((filterSection, index) => {
 							filterSection.classList.add('_show')
+							if (index === filterSections.length - 1) {
+								filterSection.classList.add('_last-child')
+							}
 						});
 
 					} else {
 						const sectionsWithRightCategory = document.querySelectorAll(`[data-filter-content="${buttonId}"]`)
 
-						sectionsWithRightCategory.forEach(sectionWithRightCategory => {
+						sectionsWithRightCategory.forEach((sectionWithRightCategory, index) => {
 							sectionWithRightCategory.classList.add('_show')
+							if (index === sectionsWithRightCategory.length - 1) {
+								sectionWithRightCategory.classList.add('_last-child')
+							}
 						});
 					}
 
@@ -351,7 +359,7 @@ filterFunction()
 
 function videoPlay() {
 	const videoSections = document.querySelectorAll('[data-js-video-player]');
-	
+
 
 	if (videoSections) {
 		videoSections.forEach(videoSection => {
@@ -374,7 +382,7 @@ function videoPlay() {
 				video.controls = false
 				button.classList.add('_active')
 
-				
+
 			}
 		});
 

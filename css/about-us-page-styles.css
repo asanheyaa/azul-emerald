@@ -808,6 +808,34 @@
   }
 }
 
+.map__container-big {
+  position: relative;
+}
+.map__location {
+  background: url(../img/icons/location-black.svg) left 3px/13px 17px no-repeat;
+  padding-left: 22px;
+  display: inline-block;
+  color: #282825;
+  font-size: 14px;
+}
+@media (min-width: 991.98px) {
+  .map__location {
+    padding-right: 93px;
+    position: absolute;
+    top: 32px;
+    right: 0;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1330px) {
+  .map__location {
+    padding-right: calc(30px + 63 * (100vw - 320px) / 1010);
+  }
+}
+@media (max-width: 991.98px) {
+  .map__location {
+    margin-bottom: 15px;
+  }
+}
 .map__body {
   width: 100%;
   height: 737px;

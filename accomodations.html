@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hotel">
+    <script src="js/font-loader.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main-styles.min.css">
+    <link rel="stylesheet" href="css/accomodations-page-styles.min.css">
+    <title>Azul Emerald | Accomodations</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <button type="button" aria-label="burger-button" class="header__burger burger">
+                    <span class="burger__line burger__line_01"></span>
+                    <span class="burger__line burger__line_02"></span>
+                </button>
+                <a href="index.html" aria-label="link homepage" class="header__logo"><img width="194" height="52"
+                        src="img/main/logo.svg" alt="logo"></a>
+                <div class="header__menu-wrapper">
+                    <nav class='header__menu header-menu'>
+                        <ul class='header-menu__list'>
+                            <li class='header-menu__item'>
+                                <a href='index.html' class='header-menu__link'>Homepage</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='about-us.html' class='header-menu__link'>About us</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='activities.html' class='header-menu__link'>Activities</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='accomodations.html' class='header-menu__link'>Accomodations</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='blog.html' class='header-menu__link'>Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions">
+                    <div class="header__select select" data-select-menu>
+                        <button class="select__header" type="button" aria-label="choose language"
+                            data-select-menu-button>
+                            <span class="select__value" data-select-menu-value>En</span>
+                            <span class="select__icon">
+                                <svg>
+                                    <use xlink:href='img/icons/icons-sprite.svg#arrow-bottom'></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="select__body" data-select-menu-drop-down>
+                            <li class="select__item" data-select-menu-option><span>En</span></li>
+                            <li class="select__item" data-select-menu-option><span>Ua</span></li>
+                        </ul>
+                    </div>
+                    <div class="header__buttons" data-da=".header__menu-wrapper,1200,last">
+                        <a href="" class="header__button header__button-back">Sign in</a>
+                        <a href="" class="header__button header__button-transparent">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section aria-labelledby="Accomodations-title" class="hero hero-extra">
+                <div class="hero__background ibg shadow">
+                    <picture>
+                        <source srcset="img/accomodations/hero/mobile/hero_back-mobile.avif"
+                            media="(max-width:767.98px)" type="image/avif">
+                        <source srcset="img/accomodations/hero/mobile/hero_back-mobile.jpg"
+                            media="(max-width:767.98px)">
+
+                        <source srcset="img/accomodations/hero/hero_back.avif" type="image/avif">
+                        <img width="1440" height="634" loading="eager" src="img/accomodations/hero/hero_back.jpg"
+                            alt="Accomodations-image">
+                    </picture>
+                </div>
+                <div class="hero__container">
+                    <div class="hero__label label label-extra">Get all the information needed</div>
+                    <h1 class="hero__title title title-white" id="Accomodations-title">Our personal blog</h1>
+                </div>
+            </section>
+            <div class="page__back-box">
+                <div class="page__back">
+                    <img src="img/accomodations/main/back-lines.svg" loading="lazy" alt="page-background">
+                </div>
+                <section class="architecture" aria-labelledby="architecture-title">
+                    <div class="architecture__container architecture__container-big">
+                        <div class="architecture__header header-architecture">
+                            <div class="header-architecture__container">
+                                <div class="header-architecture__top">
+                                    <div class="header-architecture__label">The architecture</div>
+                                    <h2 class="header-architecture__title title" id="architecture-title">Our cottages &
+                                        village
+                                    </h2>
+                                </div>
+                                <div class="header-architecture__subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad
+                                </div>
+                                <div class="header-architecture__footer">
+                                    <div class="header-architecture__nav  swiper-nav">
+                                        <button type="button" class="swiper-nav__prev header-architecture__prev">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__prev'></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="swiper-nav__next header-architecture__next">
+                                            <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="architecture__content content-architecture">
+                            <div class="content-architecture__swiper swiper">
+                                <div class="content-architecture__wrapper swiper-wrapper">
+                                    <div class="content-architecture__slide swiper-slide">
+                                        <picture>
+                                            <source srcset="img/accomodations/architecture/architecture__image_01.avif"
+                                                type="image/avif">
+                                            <img width="518" height="618" loading="lazy"
+                                                src="img/accomodations/architecture/architecture__image_01.jpg"
+                                                alt="architecture-image">
+                                        </picture>
+                                    </div>
+                                    <div class="content-architecture__slide swiper-slide">
+                                        <picture>
+                                            <source srcset="img/accomodations/architecture/architecture__image_02.avif"
+                                                type="image/avif">
+                                            <img width="518" height="618" loading="lazy"
+                                                src="img/accomodations/architecture/architecture__image_02.jpg"
+                                                alt="architecture-image">
+                                        </picture>
+                                    </div>
+                                    <div class="content-architecture__slide swiper-slide">
+                                        <picture>
+                                            <source srcset="img/accomodations/architecture/architecture__image_03.avif"
+                                                type="image/avif">
+                                            <img width="518" height="618" loading="lazy"
+                                                src="img/accomodations/architecture/architecture__image_03.jpg"
+                                                alt="architecture-image">
+                                        </picture>
+                                    </div>
+                                    <div class="content-architecture__slide swiper-slide">
+                                        <picture>
+                                            <source srcset="img/accomodations/architecture/architecture__image_01.avif"
+                                                type="image/avif">
+                                            <img width="518" height="618" loading="lazy"
+                                                src="img/accomodations/architecture/architecture__image_01.jpg"
+                                                alt="architecture-image">
+                                        </picture>
+                                    </div>
+                                    <div class="content-architecture__slide swiper-slide">
+                                        <picture>
+                                            <source srcset="img/accomodations/architecture/architecture__image_02.avif"
+                                                type="image/avif">
+                                            <img width="518" height="618" loading="lazy"
+                                                src="img/accomodations/architecture/architecture__image_02.jpg"
+                                                alt="architecture-image">
+                                        </picture>
+                                    </div>
+                                    <div class="content-architecture__slide swiper-slide">
+                                        <picture>
+                                            <source srcset="img/accomodations/architecture/architecture__image_03.avif"
+                                                type="image/avif">
+                                            <img width="518" height="618" loading="lazy"
+                                                src="img/accomodations/architecture/architecture__image_03.jpg"
+                                                alt="architecture-image">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="accomodations-rooms" aria-labelledby="accomodations-rooms-title">
+                    <div class="accomodations-rooms__header header-accomodations-rooms">
+                        <div class="header-accomodations-rooms__container">
+                            <div class="header-accomodations-rooms__label label">Accomodations</div>
+                            <h2 class="header-accomodations-rooms__title title" id="accomodations-rooms-title">Be our
+                                guest
+                            </h2>
+                            <div class="header-accomodations-rooms__subtitle">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad</div>
+                        </div>
+                    </div>
+
+                    <div class="accomodations-rooms__content content-accomodations-rooms" data-filter>
+                        <div class="content-accomodations-rooms__container content-accomodations-rooms__container-big">
+                            <div class="content-accomodations-rooms__nav nav-accomodations-rooms">
+                                <ul class="nav-accomodations-rooms__list">
+                                    <li class="nav-accomodations-rooms__item">
+                                        <button class="nav-accomodations-rooms__button button button-green _active"
+                                            data-filter-category="all" type="button">All</button>
+                                    </li>
+                                    <li class="nav-accomodations-rooms__item">
+                                        <button class="nav-accomodations-rooms__button button button-green"
+                                            data-filter-category="rooms" type="button">Rooms</button>
+                                    </li>
+                                    <li class="nav-accomodations-rooms__item">
+                                        <button class="nav-accomodations-rooms__button button button-green"
+                                            data-filter-category="suites" type="button">Suites</button>
+                                    </li>
+                                    <li class="nav-accomodations-rooms__item">
+                                        <button class="nav-accomodations-rooms__button button button-green"
+                                            data-filter-category="special" type="button">Special</button>
+                                    </li>
+                                    <li class="nav-accomodations-rooms__item">
+                                        <button class="nav-accomodations-rooms__button button button-green"
+                                            data-filter-category="accessible" type="button">Accessible</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-accomodations-rooms__items">
+                                <article data-filter-content="rooms" class="content-accomodations-rooms__item content-accomodations-rooms__item-01 _show">
+                                    <div class="content-accomodations-rooms__header header-content-accomodations">
+                                        <div class="header-content-accomodations__swiper swiper">
+                                            <div class="header-content-accomodations__wrapper swiper-wrapper">
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source
+                                                            srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__01.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__01.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source
+                                                            srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__01.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__01.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source
+                                                            srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__01.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__01.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source
+                                                            srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__01.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__01.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <!--data-da attribute that moves the element to the element(content-accomodations-rooms__item-01) at the width of the device (max 500px). Required for adaptation to mobile devices  -->
+                                            <div data-da=".content-accomodations-rooms__item-01,550,first"
+                                                class="header-content-accomodations__nav swiper-nav swiper-nav-centered">
+                                                <button type="button"
+                                                    class="swiper-nav__prev header-content-accomodations__prev swiper-button-prev">
+                                                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                        <use xlink:href='img/icons/icons-sprite.svg#long-arrow__prev'>
+                                                        </use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button"
+                                                    class="swiper-nav__next header-content-accomodations__next swiper-button-next">
+                                                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                        <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'>
+                                                        </use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div
+                                                class="header-content-accomodations__pagination swiper-pagination swiper-pagination-box">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-accomodations-rooms__body body-content-accomodations">
+                                        <div class="body-content-accomodations__container">
+                                            <h3 class="body-content-accomodations__title title title-medium">Garden view room</h3>
+                                            <div class="body-content-accomodations__details">
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="25" viewBox="0 0 32 25" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bed'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">King Size Bed</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="21" height="32" viewBox="0 0 21 32" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#person'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">1-2 Persons</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="27" viewBox="0 0 32 27" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bathtub'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">Bathtub</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="25" viewBox="0 0 32 25" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bed'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">King Size Bed</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="21" height="32" viewBox="0 0 21 32" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#person'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">1-2 Persons</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="27" viewBox="0 0 32 27" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bathtub'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">Bathtub</div>
+                                                </div>
+                                            </div>
+                                            <div class="body-content-accomodations__columns">
+                                                <div class="body-content-accomodations__column body-content-accomodations__column-main">
+                                                    <h4 class="body-content-accomodations__label">Overview</h4>
+                                                    <div class="body-content-accomodations__text">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt
+                                                        </p>
+                                                        <p>
+                                                            ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="body-content-accomodations__column body-content-accomodations__column-doble body-content-accomodations__column-border">
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Size</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">1,033 s.f. / 96 m2
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Occupancy</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">2 Adults + 2
+                                                                children under 12</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="body-content-accomodations__column body-content-accomodations__column-doble">
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Ideal for</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">
+                                                                Couples
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Best friends
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Families with children 12 and under
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Features</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">
+                                                                Living Room
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Media Room with large screen TV, workspace
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Outdoor lounge area on deck
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="body-content-accomodations__buttons">
+                                                    <a href="" class="body-content-accomodations__button body-content-accomodations__button-small">Book Now</a>
+                                                    <a href="" class="body-content-accomodations__button button button-green">Availability</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="suites" class="content-accomodations-rooms__item content-accomodations-rooms__item-02 _show">
+                                    <div class="content-accomodations-rooms__header header-content-accomodations">
+                                        <div class="header-content-accomodations__swiper swiper">
+                                            <div class="header-content-accomodations__wrapper swiper-wrapper">
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__02.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__02.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__02.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__02.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__02.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__02.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__02.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__02.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <!--data-da attribute that moves the element to the element(content-accomodations-rooms__item-02) at the width of the device (max 500px). Required for adaptation to mobile devices  -->
+                                            <div data-da=".content-accomodations-rooms__item-02,550,first"
+                                                class="header-content-accomodations__nav swiper-nav swiper-nav-centered">
+                                                <button type="button" class="swiper-nav__prev header-content-accomodations__prev swiper-button-prev">
+                                                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                        <use xlink:href='img/icons/icons-sprite.svg#long-arrow__prev'>
+                                                        </use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="swiper-nav__next header-content-accomodations__next swiper-button-next">
+                                                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                        <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'>
+                                                        </use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="header-content-accomodations__pagination swiper-pagination swiper-pagination-box">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-accomodations-rooms__body body-content-accomodations">
+                                        <div class="body-content-accomodations__container">
+                                            <h3 class="body-content-accomodations__title title title-medium">Garden view room</h3>
+                                            <div class="body-content-accomodations__details">
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="25" viewBox="0 0 32 25" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bed'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">King Size Bed</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="21" height="32" viewBox="0 0 21 32" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#person'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">1-2 Persons</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="27" viewBox="0 0 32 27" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bathtub'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">Bathtub</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="25" viewBox="0 0 32 25" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bed'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">King Size Bed</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="21" height="32" viewBox="0 0 21 32" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#person'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">1-2 Persons</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="27" viewBox="0 0 32 27" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bathtub'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">Bathtub</div>
+                                                </div>
+                                            </div>
+                                            <div class="body-content-accomodations__columns">
+                                                <div class="body-content-accomodations__column body-content-accomodations__column-main">
+                                                    <h4 class="body-content-accomodations__label">Overview</h4>
+                                                    <div class="body-content-accomodations__text">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt
+                                                        </p>
+                                                        <p>
+                                                            ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="body-content-accomodations__column body-content-accomodations__column-doble body-content-accomodations__column-border">
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Size</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">1,033 s.f. / 96 m2
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Occupancy</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">2 Adults + 2
+                                                                children under 12</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="body-content-accomodations__column body-content-accomodations__column-doble">
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Ideal for</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">
+                                                                Couples
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Best friends
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Families with children 12 and under
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Features</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">
+                                                                Living Room
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Media Room with large screen TV, workspace
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Outdoor lounge area on deck
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="body-content-accomodations__buttons">
+                                                    <a href="" class="body-content-accomodations__button body-content-accomodations__button-small">Book
+                                                        Now</a>
+                                                    <a href="" class="body-content-accomodations__button button button-green">Availability</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="special" class="content-accomodations-rooms__item content-accomodations-rooms__item-03 _show">
+                                    <div class="content-accomodations-rooms__header header-content-accomodations">
+                                        <div class="header-content-accomodations__swiper swiper">
+                                            <div class="header-content-accomodations__wrapper swiper-wrapper">
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <!--data-da attribute that moves the element to the element(content-accomodations-rooms__item-03) at the width of the device (max 500px). Required for adaptation to mobile devices  -->
+                                            <div data-da=".content-accomodations-rooms__item-03,550,first"
+                                                class="header-content-accomodations__nav swiper-nav swiper-nav-centered">
+                                                <button type="button" class="swiper-nav__prev header-content-accomodations__prev swiper-button-prev">
+                                                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                        <use xlink:href='img/icons/icons-sprite.svg#long-arrow__prev'>
+                                                        </use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="swiper-nav__next header-content-accomodations__next swiper-button-next">
+                                                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                        <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'>
+                                                        </use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="header-content-accomodations__pagination swiper-pagination swiper-pagination-box">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-accomodations-rooms__body body-content-accomodations">
+                                        <div class="body-content-accomodations__container">
+                                            <h3 class="body-content-accomodations__title title title-medium">Garden view room</h3>
+                                            <div class="body-content-accomodations__details">
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="25" viewBox="0 0 32 25" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bed'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">King Size Bed</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="21" height="32" viewBox="0 0 21 32" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#person'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">1-2 Persons</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="27" viewBox="0 0 32 27" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bathtub'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">Bathtub</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="25" viewBox="0 0 32 25" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bed'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">King Size Bed</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="21" height="32" viewBox="0 0 21 32" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#person'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">1-2 Persons</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="27" viewBox="0 0 32 27" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bathtub'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">Bathtub</div>
+                                                </div>
+                                            </div>
+                                            <div class="body-content-accomodations__columns">
+                                                <div class="body-content-accomodations__column body-content-accomodations__column-main">
+                                                    <h4 class="body-content-accomodations__label">Overview</h4>
+                                                    <div class="body-content-accomodations__text">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt
+                                                        </p>
+                                                        <p>
+                                                            ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="body-content-accomodations__column body-content-accomodations__column-doble body-content-accomodations__column-border">
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Size</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">1,033 s.f. / 96 m2
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Occupancy</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">2 Adults + 2
+                                                                children under 12</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="body-content-accomodations__column body-content-accomodations__column-doble">
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Ideal for</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">
+                                                                Couples
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Best friends
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Families with children 12 and under
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Features</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">
+                                                                Living Room
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Media Room with large screen TV, workspace
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Outdoor lounge area on deck
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="body-content-accomodations__buttons">
+                                                    <a href="" class="body-content-accomodations__button body-content-accomodations__button-small">Book
+                                                        Now</a>
+                                                    <a href="" class="body-content-accomodations__button button button-green">Availability</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article data-filter-content="accessible" class="content-accomodations-rooms__item content-accomodations-rooms__item-04 _show _last-child">
+                                    <div class="content-accomodations-rooms__header header-content-accomodations">
+                                        <div class="header-content-accomodations__swiper swiper">
+                                            <div class="header-content-accomodations__wrapper swiper-wrapper">
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                                <div class="header-content-accomodations__slide swiper-slide ibg">
+                                                    <picture>
+                                                        <source srcset="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.avif"
+                                                            type="image/avif">
+                                                        <img width="1440" height="521" loading="lazy"
+                                                            src="img/accomodations/accomodations-rooms/accomodations-rooms_image__03.jpg"
+                                                            alt="accomodations-rooms-image">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <!--data-da attribute that moves the element to the element(content-accomodations-rooms__item-04) at the width of the device (max 500px). Required for adaptation to mobile devices  -->
+                                            <div data-da=".content-accomodations-rooms__item-04,550,first"
+                                                class="header-content-accomodations__nav swiper-nav swiper-nav-centered">
+                                                <button type="button" class="swiper-nav__prev header-content-accomodations__prev swiper-button-prev">
+                                                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                        <use xlink:href='img/icons/icons-sprite.svg#long-arrow__prev'>
+                                                        </use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="swiper-nav__next header-content-accomodations__next swiper-button-next">
+                                                    <svg width="66" height="56" viewBox="0 0 66 56" fill="none">
+                                                        <use xlink:href='img/icons/icons-sprite.svg#long-arrow__next'>
+                                                        </use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="header-content-accomodations__pagination swiper-pagination swiper-pagination-box">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-accomodations-rooms__body body-content-accomodations">
+                                        <div class="body-content-accomodations__container">
+                                            <h3 class="body-content-accomodations__title title title-medium">Garden view room</h3>
+                                            <div class="body-content-accomodations__details">
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="25" viewBox="0 0 32 25" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bed'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">King Size Bed</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="21" height="32" viewBox="0 0 21 32" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#person'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">1-2 Persons</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="27" viewBox="0 0 32 27" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bathtub'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">Bathtub</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="25" viewBox="0 0 32 25" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bed'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">King Size Bed</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="21" height="32" viewBox="0 0 21 32" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#person'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">1-2 Persons</div>
+                                                </div>
+                                                <div class="body-content-accomodations__row">
+                                                    <div class="body-content-accomodations__icon">
+                                                        <svg width="32" height="27" viewBox="0 0 32 27" fill="none">
+                                                            <use xlink:href='img/icons/icons-sprite.svg#bathtub'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="body-content-accomodations__value">Bathtub</div>
+                                                </div>
+                                            </div>
+                                            <div class="body-content-accomodations__columns">
+                                                <div class="body-content-accomodations__column body-content-accomodations__column-main">
+                                                    <h4 class="body-content-accomodations__label">Overview</h4>
+                                                    <div class="body-content-accomodations__text">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt
+                                                        </p>
+                                                        <p>
+                                                            ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="body-content-accomodations__column body-content-accomodations__column-doble body-content-accomodations__column-border">
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Size</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">1,033 s.f. / 96 m2
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Occupancy</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">2 Adults + 2
+                                                                children under 12</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="body-content-accomodations__column body-content-accomodations__column-doble">
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Ideal for</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">
+                                                                Couples
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Best friends
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Families with children 12 and under
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body-content-accomodations__elem">
+                                                        <h4 class="body-content-accomodations__label">Features</h4>
+                                                        <ul class="body-content-accomodations__list">
+                                                            <li class="body-content-accomodations__item">
+                                                                Living Room
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Media Room with large screen TV, workspace
+                                                            </li>
+                                                            <li class="body-content-accomodations__item">
+                                                                Outdoor lounge area on deck
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="body-content-accomodations__buttons">
+                                                    <a href="" class="body-content-accomodations__button body-content-accomodations__button-small">Book
+                                                        Now</a>
+                                                    <a href="" class="body-content-accomodations__button button button-green">Availability</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accomodations-rooms__footer footer-accomodations-rooms">
+                        <button type="button" class="footer-accomodations-rooms__button">Load more</button>
+                    </div>
+
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__info info-footer">
+                    <a href="/" class="info-footer__logo" aria-label="link homepage"><img loading="lazy"
+                            src="img/main/logo-dark.svg" alt="logo"></a>
+                    <form action="#" class="info-footer__form">
+                        <input type="email" placeholder="Your email:" class="info-footer__input">
+                        <button class="info-footer__button link">
+                            <span>Subscribe to the newsletter</span>
+                            <svg width="13" height="12" viewBox="0 0 13 12">
+                                <use xlink:href='img/icons/icons-sprite.svg#arrow-right'></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <nav class='footer__menu footer-menu'>
+                    <div class="footer-menu__label label">Menu</div>
+                    <ul class='footer-menu__list'>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Homepage</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>About us</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Activities</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Accomodations</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts contacts-footer">
+                    <div class="contacts-footer__label label">Contact information</div>
+                    <address class="contacts-footer__address">
+                        <span class="contacts-footer__location">Haiti street, luxury azul resort Madagascar</span>
+                        <a href="mailto:azul@gmail.com" class="contacts-footer__email">azul@gmail.com</a>
+                        <a href="tel:+731234114560" class="contacts-footer__number">+73 123 411 4560</a>
+                    </address>
+                </div>
+                <div class="footer__socials socials-footer">
+                    <a href="" aria-label="dribble" class="socials-footer__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_01'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="twitter" class="socials-footer__item">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_02'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="youtube" class="socials-footer__item">
+                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_03'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="instagram" class="socials-footer__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_04'></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__empty"></div>
+                <div class="footer__copy">© 2024 Luminous. All rights reserved</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swipers.min.js"></script>
+    <script src="js/script.min.js"></script>
+
+</body>
+
+</html>

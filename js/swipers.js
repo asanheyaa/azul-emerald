@@ -164,10 +164,55 @@ const swiperAboutUsStory = new Swiper('.decor-about-story__swiper', {
 		delay: 5000,
 	},
 	allowTouchMove: false,
-	// breakpoints: {
-	// 	992: {
-	// 		centeredSlides:false
-	// 	},
-
-	// },
 });
+
+// Accomodations Us Page
+
+const swiperArchitecture = new Swiper('.content-architecture__swiper', {
+	autoHeight: true,
+	keyboard: true,
+	navigation: {
+		nextEl: '.header-architecture__next',
+		prevEl: '.header-architecture__prev',
+	},
+	spaceBetween: 5,
+	slidesPerView: 1,
+	breakpoints: {
+		470: {
+			slidesPerView: 2,
+		},
+		992: {
+			slidesPerView: 'auto',
+		},
+	}
+});
+
+
+const accomodationsSwipers = document.querySelectorAll('.header-content-accomodations__swiper');
+
+if (accomodationsSwipers) {
+	accomodationsSwipers.forEach(accomodationsSwiper => {
+
+		const pagination = accomodationsSwiper.querySelector('.header-content-accomodations__pagination'),
+			navigationButtonPrev = accomodationsSwiper.querySelector('.header-content-accomodations__prev'),
+			navigationButtonNext = accomodationsSwiper.querySelector('.header-content-accomodations__next')
+
+		const swiper = new Swiper(accomodationsSwiper, {
+			keyboard: true,
+			slidesPerView: 1,
+			spaceBetween:30,
+			pagination: {
+				el: pagination,
+				type: "fraction",
+				renderFraction: function (currentClass, totalClass) {
+					return `<span class="${currentClass} swiper-pagination-box__current"></span>` +
+						`<span class="${totalClass} swiper-pagination-box__total"></span>`;
+				}
+			},
+			navigation: {
+				nextEl: navigationButtonNext,
+				prevEl: navigationButtonPrev,
+			},
+		});
+	});
+}

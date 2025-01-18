@@ -667,20 +667,36 @@ $containerWidth: 1330;
 
 //==========================================================================================================================================================
 .map {
+	&__container {
+	}
 
-		&__container {
+	&__container-big {
+		position: relative;
+	}
+
+	&__location {
+		background: url(../img/icons/location-black.svg) left 3px / 13px 17px no-repeat;
+		padding-left: 22px;
+		display: inline-block;
+		color: #282825;
+		font-size: 14px;
+		@media (min-width: 991.98px) {
+			@include adaptiveValue(padding-right, 93, 30);
+			position: absolute;
+			top: 32px;
+			right: 0;
 		}
-
-		&__container-big {
-			
+		@media (max-width:991.98px) {
+			margin-bottom: 15px;
 		}
+	}
 
-		&__body{
+	&__body {
+		width: 100%;
+		@include adaptiveValue(height, 737, 400);
+		iframe {
 			width: 100%;
-			@include adaptiveValue(height,737 , 400);
-			iframe{
-				width: 100%;
-				height: 100%;
-			}
+			height: 100%;
 		}
+	}
 }

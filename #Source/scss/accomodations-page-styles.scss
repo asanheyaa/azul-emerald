@@ -46,7 +46,7 @@ $containerWidth: 1330;
 .hero {
 	position: relative;
 	@include adaptiveValue(padding-top, 285, 150);
-	@include adaptiveValue(padding-bottom, 255, 100);
+	padding-bottom: 22px;
 	&-extra {
 	}
 	&__swiper {
@@ -72,10 +72,21 @@ $containerWidth: 1330;
 	}
 
 	&__title {
-		@include adaptiveValue(margin-bottom, 41, 30);
+		margin-bottom: 24px;
+		@include adaptiveValue(font-size, 62, 30);
 	}
 
-	&__form {
+	&__footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include adaptiveValue(gap, 146, 50);
+	}
+
+	&__button {
+		padding: 7px 22px;
+	}
+	&__link {
 	}
 }
 

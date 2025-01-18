@@ -749,9 +749,14 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media (min-width: 767.98px) {
+@media (min-width: 991.98px) {
   .description__content {
     padding: 70px 0 50px;
+  }
+}
+@media (min-width: 767.98px) {
+  .description__content {
+    padding: 50px 0 30px;
   }
 }
 .description__title {

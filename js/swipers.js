@@ -63,7 +63,6 @@ const swiperAbout = new Swiper('.swiper-about', {
 
 
 
-
 // Blog page
 const swiperBlogLates = new Swiper('.swiper-blog-latest', {
 	loop: true,
@@ -138,7 +137,7 @@ const swiperExperience = new Swiper('.content-experience__swiper', {
 	},
 	centeredSlides: true,
 	spaceBetween: 0,
-
+	keyboard:true,
 
 	breakpoints: {
 		992: {
@@ -216,3 +215,34 @@ if (accomodationsSwipers) {
 		});
 	});
 }
+
+
+// ActivitiesPege
+
+const swiperSelebrate = new Swiper('.content-selebrate__swiper', {
+
+	loop: true,
+	slidesPerView: 1,
+	effect: 'coverflow',
+	coverflowEffect: {
+		rotate: 0,
+		slideShadows: false,
+		scale: .95,
+		stretch: -2
+	},
+	centeredSlides: true,
+	spaceBetween: 93,
+	keyboard:true,
+	spaceBetween: 30,
+	autoHeight:true,
+	breakpoints: {
+		992: {
+			slidesPerView: 2.61,
+			spaceBetween: 93,
+		}, 600: {
+			slidesPerView: 1.5,
+			spaceBetween: 50,
+		},
+
+	},
+});

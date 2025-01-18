@@ -4,6 +4,8 @@ const burgerMenu = document.querySelector('.burger'),
 	menu = document.querySelector('.header__menu-wrapper'),
 	header = document.querySelector('.header')
 burgerMenu.addEventListener('click', burgerFunction);
+
+
 function burgerFunction(e) {
 	burgerMenu.classList.toggle('_active');
 	menu.classList.toggle('_active');

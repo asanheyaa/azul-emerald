@@ -53,7 +53,7 @@ function selectMenu() {
 			const parent = e.target.closest('[data-select-menu]'),
 				selectValue = parent.querySelector('[data-select-menu-value]'),
 				selectBody = parent.querySelector('[data-select-menu-drop-down]');
-			let valueItem = this.innerText;
+			let valueItem = this.innerHTML;
 			selectValue.innerHTML = valueItem;
 			parent.classList.remove('_active')
 			_slideUp(selectBody, 300)

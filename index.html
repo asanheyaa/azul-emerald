@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="hotel">
     <script src="js/font-loader.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main-styles.min.css">
     <link rel="stylesheet" href="css/homepage-styles.min.css">
@@ -17,10 +18,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <button type="button" aria-label="burger-button" class="header__burger burger">
-                    <span class="burger__line burger__line_01"></span>
-                    <span class="burger__line burger__line_02"></span>
-                </button>
+              
                 <a href="index.html" aria-label="link homepage" class="header__logo"><img width="194" height="52"
                         src="img/main/logo.svg" alt="logo"></a>
                 <div class="header__menu-wrapper">
@@ -33,12 +31,6 @@
                                 <a href='about-us.html' class='header-menu__link'>About us</a>
                             </li>
                             <li class='header-menu__item'>
-                                <a href='activities.html' class='header-menu__link'>Activities</a>
-                            </li>
-                            <li class='header-menu__item'>
-                                <a href='accomodations.html' class='header-menu__link'>Accomodations</a>
-                            </li>
-                            <li class='header-menu__item'>
                                 <a href='blog.html' class='header-menu__link'>Blog</a>
                             </li>
                         </ul>
@@ -48,79 +40,55 @@
                     <div class="header__select select" data-select-menu>
                         <button class="select__header" type="button" aria-label="choose language"
                             data-select-menu-button>
-                            <span class="select__value" data-select-menu-value>En</span>
+                            <span class="select__value" data-select-menu-value>
+                                <svg width="20px" height="20px" viewBox="0 0 36 36">
+                                    <use xlink:href='img/icons/icons-sprite.svg#gb-flag'  ></use>
+                                </svg>
+                            </span>
                             <span class="select__icon">
-                                <svg>
+                                <svg width="15" height="13" viewBox="0 0 15 13">
                                     <use xlink:href='img/icons/icons-sprite.svg#arrow-bottom'></use>
                                 </svg>
                             </span>
                         </button>
                         <ul class="select__body" data-select-menu-drop-down>
-                            <li class="select__item" data-select-menu-option><span>En</span></li>
-                            <li class="select__item" data-select-menu-option><span>Ua</span></li>
+                            <li class="select__item" data-select-menu-option>
+                                <svg width="20px" height="20px" viewBox="0 0 36 36">
+                                    <use xlink:href='img/icons/icons-sprite.svg#gb-flag' ></use>
+                                </svg>
+                            </li>
+                            <li class="select__item" data-select-menu-option>
+                                <svg width="20px" height="20px" viewBox="0 0 36 36">
+                                    <use xlink:href='img/icons/icons-sprite.svg#ua-flag' ></use>
+                                </svg>
+                            </li>
                         </ul>
                     </div>
-                    <div class="header__buttons" data-da=".header__menu-wrapper,1200,last">
-                        <a href="" class="header__button header__button-back">Sign in</a>
-                        <a href="" class="header__button header__button-transparent">Book Now</a>
-                    </div>
                 </div>
+                <button type="button" aria-label="burger-button" class="header__burger burger">
+                    <span class="burger__line burger__line_01"></span>
+                    <span class="burger__line burger__line_02"></span>
+                </button>
             </div>
         </header>
         <main class="page">
             <section class="hero" aria-labelledby="main-title">
-                <div class="hero__swiper swiper-hero shadow">
-                    <div class="swiper-hero__wrapper swiper-wrapper">
-                        <div class="swiper-hero__slide swiper-slide">
-                            <picture>
-                                <source srcset="img/hero/mobile/hero-back-mobile_01.avif" media="(max-width:767.98px)"
-                                    type="image/avif">
-                                <source srcset="img/hero/mobile/hero-back-mobile_01.jpg" media="(max-width:767.98px)">
-
-                                <source srcset="img/hero/hero-back_01.avif" type="image/avif">
-                                <img fetchpriority="high" loading="eager" width="1440" height="822"
-                                    src="img/hero/hero-back_01.jpg" alt="hero-back">
-                            </picture>
-                        </div>
-                        <div class="swiper-hero__slide swiper-slide">
-                            <picture>
-                                <source srcset="img/hero/mobile/hero-back-mobile_02.avif" media="(max-width:767.98px)"
-                                    type="image/avif">
-                                <source srcset="img/hero/mobile/hero-back-mobile_02.jpg" media="(max-width:767.98px)">
-
-                                <source srcset="img/hero/hero-back_02.avif" type="image/avif">
-                                <img loading="lazy" width="1440" height="822" src="img/hero/hero-back_02.jpg"
-                                    alt="hero-back">
-                            </picture>
-                        </div>
-                        <div class="swiper-hero__slide swiper-slide">
-                            <picture>
-                                <source srcset="img/hero/mobile/hero-back-mobile_03.avif" media="(max-width:767.98px)"
-                                    type="image/avif">
-                                <source srcset="img/hero/mobile/hero-back-mobile_03.jpg" media="(max-width:767.98px)">
-
-                                <source srcset="img/hero/hero-back_03.avif" type="image/avif">
-                                <img loading="lazy" width="1440" height="822" src="img/hero/hero-back_03.jpg"
-                                    alt="hero-back">
-                            </picture>
-                        </div>
-                        <div class="swiper-hero__slide swiper-slide">
-                            <picture>
-                                <source srcset="img/hero/mobile/hero-back-mobile_04.avif" media="(max-width:767.98px)"
-                                    type="image/avif">
-                                <source srcset="img/hero/mobile/hero-back-mobile_04.jpg" media="(max-width:767.98px)">
-
-                                <source srcset="img/hero/hero-back_04.avif" type="image/avif">
-                                <img loading="lazy" width="1440" height="822" src="img/hero/hero-back_04.jpg"
-                                    alt="hero-back">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="swiper-hero__pagination swiper-pagination swiper-pagination-box"></div>
+                <div class="hero__decor ibg">
+                    <picture>
+                        <source srcset="img/hero/mobile/hero-back-mobile_01.avif" media="(max-width:767.98px)" type="image/avif">
+                        <source srcset="img/hero/mobile/hero-back-mobile_01.jpg" media="(max-width:767.98px)">
+                
+                        <source srcset="img/hero/hero-back_01.avif" type="image/avif">
+                        <img loading="lazy" width="1440" height="822" src="img/hero/hero-back_01.jpg" alt="about-us-back">
+                    </picture>
                 </div>
                 <div class="hero__container">
-                    <div class="hero__label label label-extra">Welcome to Azul Emerald Sea</div>
-                    <h1 class="hero__title title title-white" id="main-title">Kiteboarding experience</h1>
+                    <div class="hero__label label label-extra">Indulge in nature's beauty of</div>
+                    <h1 class="hero__title title title-white" id="main-title">The Emerald Sea</h1>
+                    <div class="hero__subtitle">
+                        Madagascar's endless & unique kiteboarding wonder
+                        <span>Opening Soon</span>
+                    </div>
                     <form action="#" class="hero__form hero-form">
                         <input placeholder="Your email:" type="email" class="hero-form__input">
                         <button class="hero-form__button button">Subscribe to the newsletter</button>
@@ -135,20 +103,22 @@
                     <div class="story__header header-story">
                         <div class="header-story__container">
                             <div class="header-story__details">
-                                <div class="header-story__label label">Our story</div>
-                                <h2 class="header-story__title title" id="story-title">How we’re building the future</h2>
+                                <div class="header-story__label label">Rooted in nature</div>
+                                <h2 class="header-story__title title" id="story-title">SUSTAINABLE BY DESIGN</h2>
                             </div>
-                            <div class="header-story__actions">
-                                <a href="" class="header-story__link header-story__link-location">Haiti street, luxury
-                                    azul
-                                    resort Madagascar</a>
-                                <a href="tel:+731234114560" class="header-story__link">+73 123 411 4560</a>
-                            </div>
+
                             <div class="header-story__info">
-                                We embody the spirit of harmony and sustainability, crafting an unparalleled retreat
-                                that
-                                seamlessly integrates with
-                                Madagascar's pristine coastline.
+                                <p>
+                                    We embody the spirit of harmony and sustainability, crafting an unparalleled retreat
+                                    that seamlessly integrates
+                                    with Madagascar’s pristine coastline.
+                                </p>
+                                <p>
+                                    Our commitment to the environment is reflected in our use of rammed earth
+                                    construction, a technique that not
+                                    only complements the natural landscape but also enhances the beauty of the
+                                    surrounding terrain.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -156,6 +126,12 @@
                         <div class="story-middle__container story-middle__container-big">
                             <div class="story-middle__swiper swiper-story swiper ">
                                 <div class="swiper-story__wrapper swiper-wrapper">
+                                    <div class="swiper-story__slide swiper-slide ibg">
+                                        <picture>
+                                            <source srcset="img/story/story-image_02.avif" type="image/avif">
+                                            <img width="1440" height="861" loading="lazy" src="img/story/story-image_02.jpg" alt="card-back">
+                                        </picture>
+                                    </div>
                                     <div class="swiper-story__slide swiper-slide">
                                         <div class="video video-ibg" data-js-video-player>
                                             <div class="video__wrapper">
@@ -168,7 +144,7 @@
                                                     </picture>
                                                 </div>
                                                 <video src="videos/sample.mp4" width="935" height="498"
-                                                    data-js-video-player-video loading="lazy" preload="none"> </video>
+                                                    data-js-video-player-video preload="none"> </video>
                                             </div>
                                             <button aria-label="Play video" title="Play video" type="button"
                                                 data-js-video-player-button class="video__play _active">
@@ -190,7 +166,7 @@
                                                     </picture>
                                                 </div>
                                                 <video src="videos/sample.mp4" width="935" height="498"
-                                                    data-js-video-player-video loading="lazy" preload="none"> </video>
+                                                    data-js-video-player-video preload="none"> </video>
                                             </div>
                                             <button aria-label="Play video" title="Play video" type="button"
                                                 data-js-video-player-button class="video__play _active">
@@ -212,7 +188,7 @@
                                                     </picture>
                                                 </div>
                                                 <video src="videos/sample.mp4" width="935" height="498"
-                                                    data-js-video-player-video loading="lazy" preload="none"> </video>
+                                                    data-js-video-player-video preload="none"> </video>
                                             </div>
                                             <button aria-label="Play video" title="Play video" type="button"
                                                 data-js-video-player-button class="video__play _active">
@@ -234,7 +210,7 @@
                                                     </picture>
                                                 </div>
                                                 <video src="videos/sample.mp4" width="935" height="498"
-                                                    data-js-video-player-video loading="lazy" preload="none"> </video>
+                                                    data-js-video-player-video preload="none"> </video>
                                             </div>
                                             <button aria-label="Play video" title="Play video" type="button"
                                                 data-js-video-player-button class="video__play _active">
@@ -245,29 +221,56 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-story__pagination swiper-pagination swiper-pagination-box"></div>
+                                <div class="swiper-nav-pagination">
+                                    <div class="swiper-nav-pagination__header">
+                                        <button class="swiper-nav-pagination__previous" type="button"
+                                            aria-label="previous slide">
+                                            Previos
+                                        </button>
+                                        <div class="swiper-nav-pagination__progress-lines">
+                                            <div class="swiper-nav-pagination__progress-total"></div>
+                                            <div class="swiper-nav-pagination__progress-current"></div>
+                                        </div>
+                                        <button class="swiper-nav-pagination__next" type="button"
+                                            aria-label="next slide">
+                                            Next
+                                        </button>
+                                    </div>
+                                    <div class="swiper-nav-pagination__numbers">
+                                        <span class="swiper-nav-pagination__number-current"></span> /
+                                        <span class="swiper-nav-pagination__number-total"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="story__footer footer-story">
                         <div class="footer-story__container">
                             <div class="footer-story__body">
-                                <div class="footer-story__info">Our commitment to the environment is reflected in our
-                                    use of
-                                    rammed earth construction, a technique that not only
-                                    complements the natural landscape but also enhances the beauty of the surrounding
-                                    terrain...</div>
-                                <a href="" class="footer-story__link link">
-                                    <span>Read more about our story</span>
-                                    <svg width="13" height="12" viewBox="0 0 13 12">
-                                        <use xlink:href='img/icons/icons-sprite.svg#arrow-right'></use>
-                                    </svg>
-                                </a>
+                                <div class="footer-story__info">
+                                    <p>
+                                        Each structure is designed to merge with its surroundings, blending elegant
+                                        simplicity with the raw, untamed charm of
+                                        the land. By honoring local culture and natural materials, and thoughtfully
+                                        integrating sustainable practices, we ensure
+                                        a presence that is both subtle and in harmony with nature. This philosophy
+                                        allows us to preserve the region’s unique
+                                        essence while offering guests an experience of profound connection with their
+                                        environment.
+                                    </p>
+                                </div>
+                                <div class="footer-story__actions">
+                                    <a href="" class="footer-story__link footer-story__link-location">Haiti street,
+                                        luxury
+                                        azul
+                                        resort Madagascar</a>
+                                    <a href="tel:+731234114560" class="footer-story__link">+73 123 411 4560</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="card" aria-labelledby="card-title">
+                <div class="card">
                     <div class="card__container card__container-big">
                         <div class="card__background shadow shadow-medium ibg">
                             <picture>
@@ -276,13 +279,9 @@
                                     alt="card-back">
                             </picture>
                         </div>
-                        <div class="card__body">
-                            <h2 class="card__title title title-white" id="card-title">One of the most thrilling experiences</h2>
-                            <div class="card__subtitle subtitle label">Check out all of the experiences that you can
-                                deal with!</div>
-                        </div>
+
                     </div>
-                </section>
+                </div>
             </div>
         </main>
         <footer class="footer">
@@ -309,12 +308,7 @@
                         <li class='footer-menu__item'>
                             <a href='' class='footer-menu__link'>About us</a>
                         </li>
-                        <li class='footer-menu__item'>
-                            <a href='' class='footer-menu__link'>Activities</a>
-                        </li>
-                        <li class='footer-menu__item'>
-                            <a href='' class='footer-menu__link'>Accomodations</a>
-                        </li>
+
                         <li class='footer-menu__item'>
                             <a href='' class='footer-menu__link'>Blog</a>
                         </li>

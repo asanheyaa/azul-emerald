@@ -35,19 +35,20 @@ $containerWidth: 1330;
 
 .hero {
 	position: relative;
-	@include adaptiveValue(padding-top, 285, 150);
-	@include adaptiveValue(padding-bottom, 255, 100);
+	@include adaptiveValue(padding-top, 274, 150);
+	@include adaptiveValue(padding-bottom, 298, 100);
 	&-extra {
+		@include adaptiveValue(padding-top, 285, 150);
+		@include adaptiveValue(padding-bottom, 255, 100);
 	}
 	&__swiper {
 	}
-
-	&__background {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
+	&__decor{
+		position:absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
 	}
 
 	&__container {
@@ -60,34 +61,16 @@ $containerWidth: 1330;
 	}
 
 	&__title {
+		
+	}
+	&__subtitle {
+		font-weight: 200;
+		text-align: center;
+		color: var(--colorWhite);
 		@include adaptiveValue(margin-bottom, 41, 30);
-	}
-
-	&__form {
-	}
-}
-
-//==========================================================================================================================================================
-
-.hero {
-	position: relative;
-	@include adaptiveValue(padding-top, 303, 150);
-	@include adaptiveValue(padding-bottom, 237, 100);
-
-	&__swiper {
-	}
-
-	&__container {
-		position: relative;
-		z-index: 2;
-	}
-
-	&__label {
-		margin-bottom: 26px;
-	}
-
-	&__title {
-		@include adaptiveValue(margin-bottom, 41, 30);
+		span{
+			display: block;
+		}
 	}
 
 	&__form {
@@ -120,6 +103,33 @@ $containerWidth: 1330;
 	}
 }
 
+.hero-form {
+	max-width: 607px;
+	margin: 0 auto;
+	display: flex;
+	gap: 14px;
+	@media (max-width: 767.98px) {
+		flex-direction: column;
+		max-width: 500px;
+	}
+	&__input {
+		flex: 0 1 50%;
+		backdrop-filter: blur(3px);
+		background: rgba(255, 255, 255, 0.15);
+		padding: 7px 17px;
+		color: rgb(255, 255, 255);
+		font-size: 16px;
+		line-height: 150%; /* 24/16 */
+		&::placeholder {
+			color: var(--colorWhite);
+		}
+	}
+
+	&__button {
+		flex: 0 1 50%;
+		padding: 7px 34px;
+	}
+}
 //==========================================================================================================================================================
 
 .our-story {
@@ -132,9 +142,20 @@ $containerWidth: 1330;
 	&__sentence {
 		@include adaptiveValue(padding-top, 68, 40);
 		@include adaptiveValue(padding-bottom, 99, 40);
+		@media (min-width: 991.98px) {
+			max-width: 700px;
+			margin-left: auto;
+		}
+		p:not(:last-child) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__container {
+	}
+	&__image {
+		padding-bottom: 50%;
+		min-height: 400px;
 	}
 }
 
@@ -145,26 +166,17 @@ $containerWidth: 1330;
 
 	&__label {
 		margin-bottom: 19px;
+		text-align: center;
 	}
 
 	&__body {
-		display: grid;
-		grid-template-columns: auto 1fr;
-		@include adaptiveValue(column-gap, 128, 30);
-		@media (max-width: 767.98px) {
-			grid-template-columns: 1fr;
-			row-gap: 20px;
-		}
+		text-align: center;
 	}
 
 	&__title {
-		grid-column: -1/1;
 	}
 
 	&__show-mobile {
-		@media (min-width: 767.98px) {
-			display: none;
-		}
 	}
 
 	&__show-desktop {
@@ -174,9 +186,7 @@ $containerWidth: 1330;
 	}
 
 	&__subtitle {
-		@media (min-width: 991.98px) {
-			margin-top: 21px;
-		}
+		margin-top: 21px;
 	}
 }
 
@@ -191,9 +201,6 @@ $containerWidth: 1330;
 	&__container-big {
 	}
 	&__body {
-		@media (min-width: 991.98px) {
-			margin-left: -13%;
-		}
 	}
 
 	&__swiper {
@@ -203,137 +210,21 @@ $containerWidth: 1330;
 	}
 
 	&__slide {
-		@media (min-width: 767.98px) {
-			width: auto;
+		padding-bottom: 53.6%;
+		@media (min-width: 992px) {
+			padding-bottom: 34.6%;
 		}
-		@media (max-width: 767.98px) {
-			position: relative;
-			min-height: 498px;
-			img {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				object-fit: cover;
-				object-position: center;
-			}
-		}
-	}
-}
-
-//==========================================================================================================================================================
-
-.plases {
-	@include adaptiveValue(padding-top, 104, 70);
-	@include adaptiveValue(padding-bottom, 130, 40);
-
-	&__header {
-	}
-
-	&__content {
-	}
-}
-.header-plases {
-	@include adaptiveValue(margin-bottom, 108, 40);
-	&__container {
-		text-align: center;
-	}
-
-	&__label {
-		margin-bottom: 15px;
-	}
-
-	&__title {
-		margin-bottom: 15px;
-	}
-
-	&__subtitile {
-		@media (max-width: 767.98px) {
-			text-align: left;
-		}
-	}
-}
-
-.content-plases {
-	&__container {
-	}
-
-	&__container-big {
-	}
-
-	&__item {
-		display: flex;
-		@include adaptiveValue(gap, 50, 30);
-		align-items: center;
-		justify-content: flex-end;
-		&:not(:last-child) {
-			@include adaptiveValue(margin-bottom, 86, 30);
-		}
-		@media (max-width: 767.98px) {
-			flex-direction: column;
-		}
-		&-reverse {
-			flex-direction: row-reverse;
-			@media (max-width: 767.98px) {
-				flex-direction: column;
-			}
-			& .content-plases__title {
-				color: var(--color-secondary);
-
-				text-align: left;
-				@media (min-width: 991.98px) {
-					margin-left: 40px;
-				}
-			}
-		}
-	}
-
-	&__info {
-		flex: 0 1 auto;
-	}
-
-	&__title {
-		font-family: "Adobe Caslon Pro", sans-serif;
-		font-weight: 600;
-		@include adaptiveValue(font-size, 42, 32);
-		line-height: 164%;
-		text-transform: uppercase;
-		color: var(--colorGreen);
-		text-align: right;
-		@media (min-width: 991.98px) {
-			margin-right: 40px;
-		}
-		@media (max-width: 767.98px) {
-			text-align: left;
-		}
-	}
-
-	&__subtitle {
-		@media (min-width: 767.98px) {
-			max-width: 534px;
-		}
-	}
-
-	&__decor {
-		flex: 0 1 52%;
-		img {
-			object-fit: cover;
-			object-position: center;
-			@media (max-width: 991.98px) {
-				height: auto;
-			}
-		}
+		min-height: 400px;
 	}
 }
 
 //==========================================================================================================================================================
 
 .about-us-story {
-	@include adaptiveValue(padding-top, 159, 40);
-	@include adaptiveValue(padding-bottom, 120, 40);
-	border-block: 1px solid var(--borderColor);
+	@include adaptiveValue(padding-top, 159, 70);
 	&__container {
+	}
+	&__content {
 		display: flex;
 		align-items: center;
 		@media (max-width: 991.98px) {
@@ -348,12 +239,23 @@ $containerWidth: 1330;
 
 	&__body {
 	}
+	&__label {
+		margin-bottom: 19px;
+		text-align: center;
+	}
+	&__title {
+		text-align: center;
+	}
+	&__subtitle {
+		@include adaptiveValue(margin-bottom, 70, 40);
+	}
 }
 .decor-about-story {
 	flex: 0 0 54.88%;
 	min-width: 0;
 	@media (max-width: 991.98px) {
 		max-width: 100%;
+		width: 100%;
 	}
 	&__swiper {
 	}
@@ -365,15 +267,15 @@ $containerWidth: 1330;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		img {
-			object-fit: cover;
-			object-position: center;
-			height: auto;
-			width: auto;
-			max-height: 730px;
-		}
 		@media (max-width: 991.98px) {
 			justify-content: center;
+		}
+	}
+	&__image {
+		padding-bottom: 100%;
+		width: 100%;
+		@media (min-width: 767.98px) and (max-width: 991.98px) {
+			padding-bottom: 50%;
 		}
 	}
 }
@@ -400,9 +302,11 @@ $containerWidth: 1330;
 	&__title {
 		@include adaptiveValue(font-size, 62, 27);
 		span {
-			display: block;
-			text-align-last: right;
 			color: var(--colorGreen);
+			@media (min-width: 991.98px) {
+				display: block;
+				text-align: right;
+			}
 		}
 		@include adaptiveValue(margin-bottom, 36, 30);
 	}
@@ -456,8 +360,17 @@ $containerWidth: 1330;
 }
 
 .content-restaurant-about {
-	max-width: 1036px;
-	margin: 0 auto;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: -5%;
+		left: 0;
+		max-height: 400px;
+		background: var(--secondaryBack);
+	}
 	&__nav {
 		justify-content: flex-end;
 		margin-bottom: 17px;
@@ -467,109 +380,118 @@ $containerWidth: 1330;
 	}
 
 	&__wrapper {
+		@media (max-width: 991.98px) and (min-width: 767.98px) {
+			padding-bottom: 50px;
+		}
+		@media (min-width: 991.98px) {
+			padding-bottom: 100px;
+		}
 	}
 
 	&__slide {
-		img {
-			object-fit: cover;
-			object-position: center;
-			@media (max-width: 991.98px) {
-				height: auto;
+		&.swiper-slide-active {
+			& .content-restaurant-about__image {
+				@media (max-width: 991.98px) and (min-width: 767.98px) {
+					transform: translate(0, 50px);
+				}
+				@media (min-width: 991.98px) {
+					transform: translate(0, 100px);
+				}
 			}
 		}
+	}
+	&__image {
+		padding-bottom: 110%;
+		min-height: 400px;
+		transition:
+			transform 0.5s ease 0s,
+			padding-bottom 0.5s ease 0s;
 	}
 }
 //==========================================================================================================================================================
 
-.experience {
-	@include adaptiveValue(padding-top, 167, 70);
+.space-time {
+	@include adaptiveValue(padding-top, 122, 70);
 	&__header {
+		text-align: center;
 	}
 
-	&__content {
-	}
-
-	&__footer {
+	&__body {
 	}
 }
-.header-experience {
-	background: var(--secondaryBack);
-	@include adaptiveValue(padding-block, 60, 20);
-	@include adaptiveValue(margin-bottom, 61, 40);
+.header-space-time {
+	@include adaptiveValue(margin-bottom, 70, 40);
 	&__container {
-	}
-	&__body {
-		max-width: 950px;
 	}
 
 	&__label {
-		margin-bottom: 15px;
+		margin-bottom: 19px;
 	}
 
 	&__title {
-		span {
-			color: var(--colorGreen);
-		}
 	}
-
 	&__subtitle {
-		margin-bottom: 15px;
-		@media (min-width: 991.98px) {
-			margin-left: 67px;
-		}
 	}
 }
 
-.content-experience {
-	@include adaptiveValue(margin-bottom, 45, 40);
+.body-space-time {
 	&__container {
 	}
 
 	&__container-big {
+		padding: 0;
 	}
 
-	&__swiper {
-	}
-
-	&__wrapper {
-	}
-
-	&__slide {
-		@media (min-width: 991.98px) {
-			width: auto;
-		}
-		@media (max-width: 991.98px) {
-			max-width: 100%;
-		}
-	}
-	&__image {
-		img {
-			object-fit: cover;
-			object-position: center;
-			@media (max-width: 991.98px) {
-				max-width: 100%;
-				height: auto !important;
-			}
-		}
+	&__decor {
+		padding-bottom: 40%;
+		min-height: 400px;
 	}
 }
 
-.footer-experience {
-	@include adaptiveValue(padding-block, 76, 20);
-	background: var(--secondaryBack);
+//==========================================================================================================================================================
+
+.about-us-advantages {
+	@include adaptiveValue(padding-top, 122, 70);
+	&__header {
+		text-align: center;
+	}
+
+	&__body {
+	}
+}
+.header-about-us-advantages {
+	@include adaptiveValue(margin-bottom, 70, 40);
 	&__container {
 	}
 
-	&__text {
-		max-width: 1061px;
-		margin-left: auto;
+	&__label {
+		margin-bottom: 19px;
+	}
+
+	&__title {
+	}
+	&__subtitle {
 	}
 }
+
+.body-about-us-advantages {
+	&__container {
+	}
+
+	&__container-big {
+		padding: 0;
+	}
+
+	&__decor {
+		padding-bottom: 40%;
+		min-height: 400px;
+	}
+}
+
 //==========================================================================================================================================================
 
 .description {
-	@include adaptiveValue(padding-top, 173, 70);
-	@include adaptiveValue(padding-bottom, 312, 70);
+	@include adaptiveValue(padding-top, 159, 70);
 	&__container {
 	}
 
@@ -579,6 +501,7 @@ $containerWidth: 1330;
 	&__item {
 		display: flex;
 		@include adaptiveValue(gap, 68, 30);
+		align-items: center;
 		@media (max-width: 767.98px) {
 			flex-direction: column-reverse;
 			&:not(:last-child) {
@@ -595,111 +518,145 @@ $containerWidth: 1330;
 
 	&__decor {
 		flex: 0 0 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		img {
-			object-fit: cover;
-			object-position: center;
-			@media (max-width: 767.98px) {
-				height: auto;
-			}
-		}
-		@media (max-width: 991.98px) {
-			text-align: center;
+		padding-bottom: 50%;
+		@media (max-width: 767.98px) {
+			width: 100%;
 		}
 	}
 
 	&__content {
-		@media (min-width: 991.98px) {
-			padding: 70px 0 50px;
-		}
-		@media (min-width: 767.98px) {
-			padding: 50px 0 30px;
-		}
-		flex: 0 1 auto;
-		display: flex;
-		flex-direction: column;
+		flex: 1 1 auto;
 	}
 
 	&__title {
 		color: var(--colorGreen);
+		text-align: center;
+	}
+}
+
+.header-description {
+	text-align: center;
+	&__label {
+		margin-bottom: 19px;
+	}
+
+	&__title {
+	}
+
+	&__subtitle {
+		@include adaptiveValue(margin-bottom, 70, 40);
+	}
+}
+
+//==========================================================================================================================================================
+.adventure {
+	@include adaptiveValue(padding-top, 159, 70);
+	@include adaptiveValue(padding-bottom, 159, 70);
+	&__container {
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		@media (max-width: 991.98px) {
+			flex-direction: column-reverse;
+			justify-content: center;
+			gap: 40px;
+		}
+	}
+
+	&__decor {
+	}
+
+	&__body {
+	}
+	&__label {
+		margin-bottom: 19px;
+		text-align: center;
+	}
+	&__title {
+		text-align: center;
+	}
+	&__subtitle {
+		@include adaptiveValue(margin-bottom, 70, 40);
+	}
+}
+.decor-adventure {
+	flex: 0 0 54.88%;
+	min-width: 0;
+	@media (max-width: 991.98px) {
+		max-width: 100%;
+		width: 100%;
+	}
+	&__swiper {
+	}
+
+	&__wrapper {
+	}
+
+	&__slide {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		@media (max-width: 991.98px) {
+			justify-content: center;
+		}
+	}
+	&__image {
+		padding-bottom: 100%;
+		width: 100%;
+		@media (min-width: 767.98px) and (max-width: 991.98px) {
+			padding-bottom: 50%;
+		}
+	}
+}
+
+.body-adventure {
+	flex: 0 1 auto;
+	@media (min-width: 991.98px) {
+		margin-left: -19%;
+	}
+	position: relative;
+	z-index: 2;
+	background: var(--secondaryBack);
+	&__header {
+		padding: 50px 75px 0px 35px;
+		@media (max-width: 767.98px) {
+			padding: 20px 15px 0px;
+		}
+	}
+
+	&__lable {
+		margin-bottom: 19px;
+	}
+
+	&__title {
+		@include adaptiveValue(font-size, 62, 27);
+		span {
+			@media (min-width: 991.98px) {
+				display: block;
+				text-align: right;
+			}
+			color: var(--colorGreen);
+		}
+		@include adaptiveValue(margin-bottom, 36, 30);
+	}
+
+	&__content {
+		padding: 0 60px 60px;
+
+		@media (max-width: 767.98px) {
+			padding: 0 15px 20px;
+		}
 	}
 
 	&__text {
-		@include adaptiveValue(margin-bottom, 63, 40);
+		@include adaptiveValue(font-size, 18, 16);
+		@include adaptiveValue(margin-bottom, 47, 30);
 		p:not(:last-child) {
 			@include adaptiveValue(margin-bottom, 30, 20);
 		}
 	}
 
-	&__contacts {
-		flex: 1 1 auto;
-		margin-bottom: 30px;
-	}
-
-	&__row {
-		&:not(:last-child) {
-			margin-bottom: 18px;
-		}
-		a {
-			color: var(--color-primary);
-			@media (any-hover: hover) {
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-		}
-	}
-
 	&__button {
-		font-size: 16px;
-		padding: 7px 22px;
-		color: #282825;
-		border: 1px solid #282825;
-		transition: all 0.3s ease 0s;
-		width: fit-content;
-		@media (any-hover: hover) {
-			&:hover {
-				background: #282825;
-				color: var(--colorWhite);
-			}
-		}
-	}
-}
-
-//==========================================================================================================================================================
-.map {
-	&__container {
-	}
-
-	&__container-big {
-		position: relative;
-	}
-
-	&__location {
-		background: url(../img/icons/location-black.svg) left 3px / 13px 17px no-repeat;
-		padding-left: 22px;
-		display: inline-block;
-		color: #282825;
-		font-size: 14px;
-		@media (min-width: 991.98px) {
-			@include adaptiveValue(padding-right, 93, 30);
-			position: absolute;
-			top: 32px;
-			right: 0;
-		}
-		@media (max-width:991.98px) {
-			margin-bottom: 15px;
-		}
-	}
-
-	&__body {
-		width: 100%;
-		@include adaptiveValue(height, 737, 400);
-		iframe {
-			width: 100%;
-			height: 100%;
-		}
 	}
 }

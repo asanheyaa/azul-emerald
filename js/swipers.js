@@ -21,27 +21,47 @@ const swiperHero = new Swiper('.swiper-hero', {
 });
 const swiperStory = new Swiper('.swiper-story', {
 	loop: true,
-	pagination: {
-		el: ".swiper-story__pagination",
-		type: "fraction",
-		renderFraction: function (currentClass, totalClass) {
-			return `<span class="${currentClass} swiper-pagination-box__current"></span>` +
-				`<span class="${totalClass} swiper-pagination-box__total"></span>`;
-		}
+	effect: 'coverflow',
+	coverflowEffect: {
+		rotate: 0,
+		slideShadows: false,
+		scale: .778,
+		stretch: 13
 	},
 	spaceBetween: 30,
 	keyboard: true,
+	centeredSlides: true,
 	breakpoints: {
 		992: {
-			slidesPerView: 1.5,
-			spaceBetween: 70,
+			slidesPerView: 1.75,
+			spaceBetween: 40,
 		},
-
 	},
 
+	on: {
+		init: sliderPagination,
 
-
+		slideChangeTransitionStart: sliderPagination,
+	},
+	navigation: {
+		nextEl: '.story-middle__swiper .swiper-nav-pagination__next',
+		prevEl: '.story-middle__swiper .swiper-nav-pagination__previous',
+	},
 });
+
+
+function sliderPagination() {
+	let currentActiveSlide = this.realIndex + 1,
+		totalSlides = this.slides.length,
+		progressWidth = (100 / totalSlides) * currentActiveSlide;
+	const parentWrapper = this.el,
+		currentNumber = parentWrapper.querySelector('.swiper-nav-pagination__number-current'),
+		totalNumber = parentWrapper.querySelector('.swiper-nav-pagination__number-total'),
+		progressLine = parentWrapper.querySelector('.swiper-nav-pagination__progress-current');
+	currentNumber.innerHTML = currentActiveSlide
+	totalNumber.innerHTML = totalSlides
+	progressLine.style.width = `${progressWidth}%`
+}
 const swiperAbout = new Swiper('.swiper-about', {
 	direction: 'vertical',
 	loop: true,
@@ -87,36 +107,61 @@ const swiperBlogLates = new Swiper('.swiper-blog-latest', {
 
 const swiperOurStory = new Swiper('.content-our-story__swiper', {
 	loop: true,
+	effect: 'coverflow',
+	coverflowEffect: {
+		rotate: 0,
+		slideShadows: false,
+		scale: .778,
+		stretch: 13
+	},
+	speed: 500,
 	spaceBetween: 30,
-	autoHeight: true,
 	keyboard: true,
+	centeredSlides: true,
 	breakpoints: {
-		768: {
-			slidesPerView: 'auto',
-			centeredSlides: true,
-			spaceBetween: 50,
+		992: {
+			slidesPerView: 1.75,
+			spaceBetween: 40,
 		},
+	},
 
+	on: {
+		init: sliderPagination,
+
+		slideChangeTransitionStart: sliderPagination,
+	},
+	navigation: {
+		nextEl: '.content-our-story__swiper .swiper-nav-pagination__next',
+		prevEl: '.content-our-story__swiper .swiper-nav-pagination__previous',
 	},
 });
 
 const swiperRestaurantAbout = new Swiper('.content-restaurant-about__swiper', {
-	autoHeight: true,
 	keyboard: true,
 	navigation: {
 		nextEl: '.content-restaurant-about__next',
 		prevEl: '.content-restaurant-about__prev',
 	},
-	spaceBetween: 5,
+	loop: true,
+	autoplay: {
+		delay: 5000,
+	},
+	speed: 500,
+	keyboard: true,
+	centeredSlides: true,
 	breakpoints: {
 		450: {
 			slidesPerView: 1,
-			slidesPerGroup: 1,
 
 		},
-		550: {
+		768: {
 			slidesPerView: 2,
-			slidesPerGroup: 2,
+			spaceBetween: 25,
+		},
+		992: {
+			spaceBetween: 50,
+
+			slidesPerView: 2.5,
 		},
 
 
@@ -137,7 +182,7 @@ const swiperExperience = new Swiper('.content-experience__swiper', {
 	},
 	centeredSlides: true,
 	spaceBetween: 0,
-	keyboard:true,
+	keyboard: true,
 
 	breakpoints: {
 		992: {
@@ -149,20 +194,76 @@ const swiperExperience = new Swiper('.content-experience__swiper', {
 	},
 });
 
+
 const swiperAboutUsStory = new Swiper('.decor-about-story__swiper', {
 	loop: true,
 	spaceBetween: 30,
 	autoHeight: true,
 	slidesPerView: 1,
 	effect: 'fade',
-
+	speed: 500,
 	fadeEffect: {
 		crossFade: true
 	},
 	autoplay: {
 		delay: 5000,
 	},
-	allowTouchMove: false,
+	breakpoints: {
+		992: {
+			allowTouchMove: false,
+		}
+
+	},
+});
+
+const swiperAdventure = new Swiper('.decor-adventure__swiper', {
+	loop: true,
+	spaceBetween: 30,
+	slidesPerView: 1,
+	effect: 'fade',
+	speed: 500,
+	fadeEffect: {
+		crossFade: true
+	},
+	keyboard: true,
+	on: {
+		init: function (){
+			let currentActiveSlide = this.realIndex + 1,
+				totalSlides = this.slides.length,
+				progressWidth = (100 / totalSlides) * currentActiveSlide;
+			const parentWrapper = document.querySelector('.adventure'),
+				currentNumber = parentWrapper.querySelector('.swiper-nav-pagination__number-current'),
+				totalNumber = parentWrapper.querySelector('.swiper-nav-pagination__number-total'),
+				progressLine = parentWrapper.querySelector('.swiper-nav-pagination__progress-current');
+			currentNumber.innerHTML = currentActiveSlide
+			totalNumber.innerHTML = totalSlides
+			progressLine.style.width = `${progressWidth}%`
+		},
+
+		slideChangeTransitionStart: function () {
+			let currentActiveSlide = this.realIndex + 1,
+				totalSlides = this.slides.length,
+				progressWidth = (100 / totalSlides) * currentActiveSlide;
+			const parentWrapper = document.querySelector('.adventure'),
+				currentNumber = parentWrapper.querySelector('.swiper-nav-pagination__number-current'),
+				totalNumber = parentWrapper.querySelector('.swiper-nav-pagination__number-total'),
+				progressLine = parentWrapper.querySelector('.swiper-nav-pagination__progress-current');
+			currentNumber.innerHTML = currentActiveSlide
+			totalNumber.innerHTML = totalSlides
+			progressLine.style.width = `${progressWidth}%`
+		},
+	},
+	navigation: {
+		nextEl: '.adventure__footer .swiper-nav-pagination__next',
+		prevEl: '.adventure__footer .swiper-nav-pagination__previous',
+	},
+
+	breakpoints: {
+		992: {
+			allowTouchMove: false,
+		}
+
+	},
 });
 
 // Accomodations Us Page
@@ -199,7 +300,7 @@ if (accomodationsSwipers) {
 		const swiper = new Swiper(accomodationsSwiper, {
 			keyboard: true,
 			slidesPerView: 1,
-			spaceBetween:30,
+			spaceBetween: 30,
 			pagination: {
 				el: pagination,
 				type: "fraction",
@@ -232,9 +333,9 @@ const swiperSelebrate = new Swiper('.content-selebrate__swiper', {
 	},
 	centeredSlides: true,
 	spaceBetween: 93,
-	keyboard:true,
+	keyboard: true,
 	spaceBetween: 30,
-	autoHeight:true,
+	autoHeight: true,
 	breakpoints: {
 		992: {
 			slidesPerView: 2.61,

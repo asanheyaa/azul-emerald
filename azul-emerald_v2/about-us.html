@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hotel">
+    <script src="js/font-loader.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main-styles.min.css">
+    <link rel="stylesheet" href="css/about-us-page-styles.min.css">
+    <title>Azul Emerald | About Us</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="index.html" aria-label="link homepage" class="header__logo"><img width="194" height="52"
+                        src="img/main/logo.svg" alt="logo"></a>
+                <div class="header__menu-wrapper">
+                    <nav class='header__menu header-menu'>
+                        <ul class='header-menu__list'>
+                            <li class='header-menu__item'>
+                                <a href='index.html' class='header-menu__link'>Homepage</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='about-us.html' class='header-menu__link'>About us</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='blog.html' class='header-menu__link'>Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions">
+                    <div class="header__select select" data-select-menu>
+                        <button class="select__header" type="button" aria-label="choose language"
+                            data-select-menu-button>
+                            <span class="select__value" data-select-menu-value>
+                                <svg width="20px" height="20px" viewBox="0 0 36 36">
+                                    <use xlink:href='img/icons/icons-sprite.svg#gb-flag'></use>
+                                </svg>
+                            </span>
+                            <span class="select__icon">
+                                <svg width="15" height="13" viewBox="0 0 15 13">
+                                    <use xlink:href='img/icons/icons-sprite.svg#arrow-bottom'></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="select__body" data-select-menu-drop-down>
+                            <li class="select__item" data-select-menu-option>
+                                <svg width="20px" height="20px" viewBox="0 0 36 36">
+                                    <use xlink:href='img/icons/icons-sprite.svg#gb-flag'></use>
+                                </svg>
+                            </li>
+                            <li class="select__item" data-select-menu-option>
+                                <svg width="20px" height="20px" viewBox="0 0 36 36">
+                                    <use xlink:href='img/icons/icons-sprite.svg#ua-flag'></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" aria-label="burger-button" class="header__burger burger">
+                    <span class="burger__line burger__line_01"></span>
+                    <span class="burger__line burger__line_02"></span>
+                </button>
+            </div>
+        </header>
+        <main class="page">
+            <section class="hero" aria-labelledby="main-title">
+               
+                <div class="hero__decor ibg">
+                    <picture>
+                        <source srcset="img/hero/mobile/hero-back-mobile_03.avif" media="(max-width:767.98px)" type="image/avif">
+                        <source srcset="img/hero/mobile/hero-back-mobile_03.jpg" media="(max-width:767.98px)">
+                    
+                        <source srcset="img/hero/hero-back_03.avif" type="image/avif">
+                        <img loading="lazy" width="1440" height="822" src="img/hero/hero-back_03.jpg" alt="about-us-back">
+                    </picture>
+                </div>
+                <div class="hero__container">
+                    <div class="hero__label label label-extra">Indulge in nature's beauty of</div>
+                    <h1 class="hero__title title title-white" id="main-title">The Emerald Sea</h1>
+                    <div class="hero__subtitle subtitle">
+                        Madagascar's endless & unique kiteboarding wonder
+                        <span>Opening Soon</span>
+                    </div>
+                    <form action="#" class="hero__form hero-form">
+                        <input placeholder="Your email:" type="email" class="hero-form__input">
+                        <button class="hero-form__button button">Subscribe to the newsletter</button>
+                    </form>
+                </div>
+            </section>
+            <div class="page__back-box">
+                <div class="page__back">
+                    <img src="img/about-us-page/main/background__line.svg" loading="lazy" alt="page-background">
+                </div>
+                <section class="our-story" aria-labelledby="our-story-title">
+                    <div class="our-story__header header-our-story">
+                        <div class="header-our-story__container">
+                            <div class="header-our-story__label label">About us</div>
+                            <div class="header-our-story__body">
+                                <h2 id="our-story-title" class="header-our-story__title title">
+                                    A PASSION TO SHARE
+                                </h2>
+                                <div class="header-our-story__subtitle subtitle">
+                                    <p>
+                                        Surrendered to the feeling of being the balance in between air and water as if
+                                        you were bending these two
+                                        extraordinary forces drive us to seek the world’s best kiteboarding weather
+                                        conditions, where they merge with the
+                                        untouched beauty of an exclusive paradise. Far from the crowds and deep within
+                                        nature, we found the perfect place to
+                                        settle a small sanctuary for those few souls longing to explore and discover
+                                        this unique wonder filled with colors, life
+                                        and serenity.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="our-story__content content-our-story">
+                        <div class="content-our-story__container content-our-story__container-big">
+                            <div class="content-our-story__body">
+                                <div class="content-our-story__swiper swiper">
+                                    <div class="content-our-story__wrapper swiper-wrapper">
+                                        <div class="content-our-story__slide swiper-slide ibg">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_02.avif"
+                                                    type="image/avif">
+                                                <img width="407" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_02.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                        <div class="content-our-story__slide swiper-slide ibg">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_03.avif"
+                                                    type="image/avif">
+                                                <img width="616" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_03.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                        <div class="content-our-story__slide swiper-slide ibg">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_01.avif"
+                                                    type="image/avif">
+                                                <img width="486" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_01.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                        <div class="content-our-story__slide swiper-slide ibg">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_02.avif"
+                                                    type="image/avif">
+                                                <img width="407" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_02.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                        <div class="content-our-story__slide swiper-slide ibg">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_03.avif"
+                                                    type="image/avif">
+                                                <img width="616" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_03.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                        <div class="content-our-story__slide swiper-slide ibg">
+                                            <picture>
+                                                <source srcset="img/about-us-page/our-story/image_01.avif"
+                                                    type="image/avif">
+                                                <img width="486" height="498" loading="lazy"
+                                                    src="img/about-us-page/our-story/image_01.jpg" alt="about-us-back">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-nav-pagination">
+                                        <div class="swiper-nav-pagination__header">
+                                            <button class="swiper-nav-pagination__previous" type="button"
+                                                aria-label="previous slide">
+                                                Previos
+                                            </button>
+                                            <div class="swiper-nav-pagination__progress-lines">
+                                                <div class="swiper-nav-pagination__progress-total"></div>
+                                                <div class="swiper-nav-pagination__progress-current"></div>
+                                            </div>
+                                            <button class="swiper-nav-pagination__next" type="button"
+                                                aria-label="next slide">
+                                                Next
+                                            </button>
+                                        </div>
+                                        <div class="swiper-nav-pagination__numbers">
+                                            <span class="swiper-nav-pagination__number-current"></span> /
+                                            <span class="swiper-nav-pagination__number-total"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-story__container">
+                        <div class="our-story__sentence">
+                            <p>
+                                “With over 20 years of expertise in this exhilarating sport, we invite you to experience
+                                one of the world's most
+                                exclusive kiteboarding paradises."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="our-story__decor">
+                        <div class="our-story__container our-story__container-big">
+                            <div class="our-story__image ibg">
+                                <picture>
+                                    <source srcset="img/about-us-page/our-story/video-poster.avif" type="image/avif">
+                                    <img width="1440" height="860" loading="lazy"
+                                        src="img/about-us-page/our-story/video-poster.jpg" alt="video-poster">
+                                </picture>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="about-us-story" aria-labelledby="about-us-story-title">
+                    <div class="about-us-story__container">
+                        <div class="about-us-story__label label">A retreat to Unveil</div>
+                        <h2 class="about-us-story__title title" id="about-us-story-title">
+                            Where Every Wave Tells a Story
+                        </h2>
+                        <div class="about-us-story__subtitle subtitle">
+                            <p>
+                                “Discover the magic of the Emerald Sea, where the untouched beauty of Madagascar’s coast
+                                meets refined authenticity.
+                                Here, our retreat blends seamlessly with nature, offering pristine waters, lush
+                                landscapes, and an atmosphere of pure
+                                serenity. Every moment is designed to immerse you in adventure, relaxation, and crafted
+                                to renew your spirit.”
+                            </p>
+                        </div>
+                        <div class="about-us-story__content">
+
+                            <div class="about-us-story__decor decor-about-story">
+                                <div class="decor-about-story__swiper swiper">
+                                    <div class="decor-about-story__wrapper swiper-wrapper">
+                                        <div class="decor-about-story__slide swiper-slide">
+                                            <div class="decor-about-story__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/about-story/decor-about-story__image_01.avif"
+                                                        type="image/avif">
+                                                    <img width="730" height="818" loading="lazy"
+                                                        src="img/about-us-page/about-story/decor-about-story__image_01.jpg"
+                                                        alt="about-story-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="decor-about-story__slide swiper-slide">
+                                            <div class="decor-about-story__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/about-story/decor-about-story__image_02.avif"
+                                                        type="image/avif">
+                                                    <img width="651" height="694" loading="lazy"
+                                                        src="img/about-us-page/about-story/decor-about-story__image_02.avif"
+                                                        alt="about-story-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="decor-about-story__slide swiper-slide">
+                                            <div class="decor-about-story__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/about-story/decor-about-story__image_03.avif"
+                                                        type="image/avif">
+                                                    <img width="751" height="525" loading="lazy"
+                                                        src="img/about-us-page/about-story/decor-about-story__image_03.avif"
+                                                        alt="about-story-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="decor-about-story__slide swiper-slide">
+                                            <div class="decor-about-story__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/about-story/decor-about-story__image_04.avif"
+                                                        type="image/avif">
+                                                    <img width="407" height="498" loading="lazy"
+                                                        src="img/about-us-page/about-story/decor-about-story__image_04.avif"
+                                                        alt="about-story-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-us-story__body body-about-story">
+                                <div class="body-about-story__header">
+                                    <div class="body-about-story__lable label">Bungalows & Villas</div>
+                                    <h2 class="body-about-story__title title">
+                                        Discover our
+                                        <span>accomodations</span>
+                                    </h2>
+                                </div>
+                                <div class="body-about-story__content">
+                                    <div class="body-about-story__text">
+                                        <p>
+                                            Each retreat has been strategically designed and built to blend seamlessly
+                                            with the spirit of the surrounding nature
+                                            enhanced by the earthy warmth of the rammed earth walls, creating a
+                                            refreshing and serene atmosphere where authenticity,
+                                            beauty, and exclusivity come together in perfect harmony.
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="restaurant-about-us" aria-label="restaurant-about-title">
+
+                    <div class="restaurant-about-us__header header-restaurant-about">
+                        <div class="header-restaurant-about__container">
+                            <div class="header-restaurant-about__label label">
+                                The essence of taste
+                            </div>
+                            <h2 class="header-restaurant-about__title title" id="restaurant-about-title">
+                                CULINARY
+                                DELIGHTS
+                            </h2>
+                            <div class="header-restaurant-about__subtitle subtitle">
+                                <p>
+                                    Experience culinary excellence at our restaurant, where local flavors meet
+                                    international cuisine in a stunning setting
+                                    overlooking Madagascar's pristine landscape.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-about-us__content content-restaurant-about">
+                        <div class="content-restaurant-about__container content-restaurant-about__container-big">
+                            <div class="content-restaurant-about__container">
+
+                                <div class="content-restaurant-about__swiper swiper">
+                                    <div class="content-restaurant-about__wrapper swiper-wrapper">
+                                        <div class="content-restaurant-about__slide swiper-slide">
+                                            <div class="content-restaurant-about__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/restaurant-about-us/restaurant-about-us_image__01.avif"
+                                                        type="image/avif">
+                                                    <img width="518" height="618" loading="lazy"
+                                                        src="img/about-us-page/restaurant-about-us/restaurant-about-us_image__01.jpg"
+                                                        alt="restaurant-about-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="content-restaurant-about__slide swiper-slide">
+                                            <div class="content-restaurant-about__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/restaurant-about-us/restaurant-about-us_image__02.avif"
+                                                        type="image/avif">
+                                                    <img width="518" height="618" loading="lazy"
+                                                        src="img/about-us-page/restaurant-about-us/restaurant-about-us_image__02.jpg"
+                                                        alt="restaurant-about-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="content-restaurant-about__slide swiper-slide">
+                                            <div class="content-restaurant-about__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/restaurant-about-us/restaurant-about-us_image__01.avif"
+                                                        type="image/avif">
+                                                    <img width="518" height="618" loading="lazy"
+                                                        src="img/about-us-page/restaurant-about-us/restaurant-about-us_image__01.jpg"
+                                                        alt="restaurant-about-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="content-restaurant-about__slide swiper-slide">
+                                            <div class="content-restaurant-about__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/restaurant-about-us/restaurant-about-us_image__02.avif"
+                                                        type="image/avif">
+                                                    <img width="518" height="618" loading="lazy"
+                                                        src="img/about-us-page/restaurant-about-us/restaurant-about-us_image__02.jpg"
+                                                        alt="restaurant-about-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="content-restaurant-about__slide swiper-slide">
+                                            <div class="content-restaurant-about__image ibg ">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/restaurant-about-us/restaurant-about-us_image__02.avif"
+                                                        type="image/avif">
+                                                    <img width="518" height="618" loading="lazy"
+                                                        src="img/about-us-page/restaurant-about-us/restaurant-about-us_image__02.jpg"
+                                                        alt="restaurant-about-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="space-time" aria-labelledby="header-space-time-title">
+                    <div class="space-time__header header-space-time">
+                        <div class="header-space-time__container">
+                            <div class="header-space-time__label label">
+                                Space & Time
+                            </div>
+                            <h2 class="header-space-time__title title" id="header-space-time-title">
+                                LAUNGE BAR
+                            </h2>
+                            <div class="header-space-time__subtitle subtitle">
+                                <p>
+                                    Experience culinary excellence at our restaurant, where local flavors meet
+                                    international cuisine in a stunning setting
+                                    overlooking Madagascar's pristine landscape.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-time__body body-space-time">
+                        <div class="body-space-time__container body-space-time__container-big">
+                            <div class="body-space-time__decor ibg">
+                                <picture>
+                                    <source srcset="img/about-us-page/space-time/space-time__image_01.avif"
+                                        type="image/avif">
+                                    <img width="1200" height="700" loading="lazy"
+                                        src="img/about-us-page/space-time/space-time__image_01.jpg" alt="space-time">
+                                </picture>
+                            </div>
+                            <div class="body-space-time__decor ibg">
+                                <picture>
+                                    <source srcset="img/about-us-page/space-time/space-time__image_02.avif"
+                                        type="image/avif">
+                                    <img width="1200" height="700" loading="lazy"
+                                        src="img/about-us-page/space-time/space-time__image_02.jpg" alt="space-time">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about-us-advantages" aria-labelledby="header-about-us-advantages-title">
+                    <div class="about-us-advantages__header header-about-us-advantages">
+                        <div class="header-about-us-advantages__container">
+                            <div class="header-about-us-advantages__label label">
+                                The cosmic nights
+                            </div>
+                            <h2 class="header-about-us-advantages__title title" id="header-about-us-advantages-title">
+                                STARGAZING POOL BAR
+                            </h2>
+                            <div class="header-about-us-advantages__subtitle subtitle">
+                                <p>
+                                    Experience culinary excellence at our restaurant, where local flavors meet
+                                    international cuisine in a stunning setting
+                                    overlooking Madagascar's pristine landscape.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us-advantages__body body-about-us-advantages">
+                        <div class="body-about-us-advantages__container body-about-us-advantages__container-big">
+                            <div class="body-about-us-advantages__decor ibg">
+                                <picture>
+                                    <source
+                                        srcset="img/about-us-page/about-us-advantages/about-us-advantages__image_01.avif"
+                                        type="image/avif">
+                                    <img width="1200" height="700" loading="lazy"
+                                        src="img/about-us-page/about-us-advantages/about-us-advantages__image_01.jpg"
+                                        alt="about-us-advantages-image">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="description" aria-labelledby="description-title">
+                    <div class="description__container">
+                        <div class="description__header header-description">
+                            <div class="header-description__label label">
+                                Wellness & Spa
+                            </div>
+                            <h2 class="header-description__title title" id="description-title">
+                                THE HEALING TEMPLE
+                            </h2>
+                            <div class="header-description__subtitle subtitle">
+                                Experience culinary excellence at our restaurant, where local flavors meet international
+                                cuisine in a stunning setting
+                                overlooking Madagascar's pristine landscape.
+                            </div>
+                        </div>
+                        <div class="description__body">
+                            <article class="description__item description__item-reverse">
+                                <div class="description__decor ibg">
+                                    <picture>
+                                        <source srcset="img/about-us-page/description/description__image_01.avif"
+                                            type="image/avif">
+                                        <img width="649" height="694" loading="lazy"
+                                            src="img/about-us-page/description/description__image_01.jpg"
+                                            alt="description__image">
+                                    </picture>
+                                </div>
+                                <div class="description__content">
+                                    <h3 class="description__title title title-medium">YOGA</h3>
+
+                                </div>
+                            </article>
+                            <article class="description__item ">
+                                <div class="description__decor ibg">
+                                    <picture>
+                                        <source srcset="img/about-us-page/description/description__image_02.avif"
+                                            type="image/avif">
+                                        <img width="649" height="694" loading="lazy"
+                                            src="img/about-us-page/description/description__image_02.jpg"
+                                            alt="description__image">
+                                    </picture>
+                                </div>
+                                <div class="description__content">
+                                    <h3 class="description__title title title-medium ">HOLISTIC THERAPIES</h3>
+
+                                </div>
+                            </article>
+                            <article class="description__item description__item-reverse">
+                                <div class="description__decor ibg">
+                                    <picture>
+                                        <source srcset="img/about-us-page/description/description__image_03.avif"
+                                            type="image/avif">
+                                        <img width="649" height="694" loading="lazy"
+                                            src="img/about-us-page/description/description__image_03.jpg"
+                                            alt="description__image">
+                                    </picture>
+                                </div>
+                                <div class="description__content">
+                                    <h3 class="description__title title title-medium">SPA TREATMENTS</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="adventure" aria-labelledby="adventure-title">
+                    <div class="adventure__container">
+                        <div class="adventure__label label">Adventure & Fitness</div>
+                        <h2 class="adventure__title title" id="adventure-title">
+                            EXPLORATION
+                        </h2>
+                        <div class="adventure__subtitle subtitle">
+                            <p>
+                                Immerse yourself in the untamed beauty of Babaomby landscapes and panoramic views, where
+                                every moment is a journey of
+                                discovery. Traverse scenic nature trails, uncover pristine islands, navigate through
+                                untouched mangrove rivers, and swim
+                                into vibrant coral reefs. Or simply set sail across an endless expanse of pristine
+                                waters, shimmering in countless
+                                shades of blue.
+                            </p>
+                        </div>
+                        <div class="adventure__content">
+
+                            <div class="adventure__decor decor-adventure">
+                                <div class="decor-adventure__swiper swiper">
+                                    <div class="decor-adventure__wrapper swiper-wrapper">
+                                        <div class="decor-adventure__slide swiper-slide">
+                                            <div class="decor-adventure__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/adventure/decor-adventure__image_01.avif"
+                                                        type="image/avif">
+                                                    <img width="730" height="818" loading="lazy"
+                                                        src="img/about-us-page/adventure/decor-adventure__image_01.jpg"
+                                                        alt="adventure-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="decor-adventure__slide swiper-slide">
+                                            <div class="decor-adventure__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/adventure/decor-adventure__image_02.avif"
+                                                        type="image/avif">
+                                                    <img width="651" height="694" loading="lazy"
+                                                        src="img/about-us-page/adventure/decor-adventure__image_02.avif"
+                                                        alt="adventure-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="decor-adventure__slide swiper-slide">
+                                            <div class="decor-adventure__image ibg">
+                                                <picture>
+                                                    <source
+                                                        srcset="img/about-us-page/adventure/decor-adventure__image_03.avif"
+                                                        type="image/avif">
+                                                    <img width="751" height="525" loading="lazy"
+                                                        src="img/about-us-page/adventure/decor-adventure__image_03.avif"
+                                                        alt="adventure-image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="adventure__body body-adventure">
+                                <div class="body-adventure__header">
+                                    <h2 class="body-adventure__title title">
+                                        WILDLIFE
+                                        <span>& LANDSCAPES</span>
+                                    </h2>
+                                </div>
+                                <div class="body-adventure__content">
+                                    <div class="body-adventure__text">
+                                        <p>
+                                            Unleash your adventurous spirit and discover the breathtaking landscapes and
+                                            immerse yourself in the diverse wildlife
+                                            that thrives in our beautiful surroundings.
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="adventure__footer">
+                            <div class="swiper-nav-pagination">
+                                <div class="swiper-nav-pagination__header">
+                                    <button class="swiper-nav-pagination__previous" type="button" aria-label="previous slide">
+                                        Previos
+                                    </button>
+                                    <div class="swiper-nav-pagination__progress-lines">
+                                        <div class="swiper-nav-pagination__progress-total"></div>
+                                        <div class="swiper-nav-pagination__progress-current"></div>
+                                    </div>
+                                    <button class="swiper-nav-pagination__next" type="button" aria-label="next slide">
+                                        Next
+                                    </button>
+                                </div>
+                                <div class="swiper-nav-pagination__numbers">
+                                    <span class="swiper-nav-pagination__number-current"></span> /
+                                    <span class="swiper-nav-pagination__number-total"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__info info-footer">
+                    <a href="/" class="info-footer__logo" aria-label="link homepage"><img loading="lazy"
+                            src="img/main/logo-dark.svg" alt="logo"></a>
+                    <form action="#" class="info-footer__form">
+                        <input type="email" placeholder="Your email:" class="info-footer__input">
+                        <button class="info-footer__button link">
+                            <span>Subscribe to the newsletter</span>
+                            <svg width="13" height="12" viewBox="0 0 13 12">
+                                <use xlink:href='img/icons/icons-sprite.svg#arrow-right'></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <nav class='footer__menu footer-menu'>
+                    <div class="footer-menu__label label">Menu</div>
+                    <ul class='footer-menu__list'>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Homepage</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>About us</a>
+                        </li>
+
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts contacts-footer">
+                    <div class="contacts-footer__label label">Contact information</div>
+                    <address class="contacts-footer__address">
+                        <span class="contacts-footer__location">Haiti street, luxury azul resort Madagascar</span>
+                        <a href="mailto:azul@gmail.com" class="contacts-footer__email">azul@gmail.com</a>
+                        <a href="tel:+731234114560" class="contacts-footer__number">+73 123 411 4560</a>
+                    </address>
+                </div>
+                <div class="footer__socials socials-footer">
+                    <a href="" aria-label="dribble" class="socials-footer__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_01'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="twitter" class="socials-footer__item">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_02'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="youtube" class="socials-footer__item">
+                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_03'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="instagram" class="socials-footer__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_04'></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__empty"></div>
+                <div class="footer__copy">© 2024 Luminous. All rights reserved</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swipers.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

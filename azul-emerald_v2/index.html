@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hotel">
+    <script src="js/font-loader.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main-styles.min.css">
+    <link rel="stylesheet" href="css/homepage-styles.min.css">
+    <title>Azul Emerald | Home</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+              
+                <a href="index.html" aria-label="link homepage" class="header__logo"><img width="194" height="52"
+                        src="img/main/logo.svg" alt="logo"></a>
+                <div class="header__menu-wrapper">
+                    <nav class='header__menu header-menu'>
+                        <ul class='header-menu__list'>
+                            <li class='header-menu__item'>
+                                <a href='index.html' class='header-menu__link'>Homepage</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='about-us.html' class='header-menu__link'>About us</a>
+                            </li>
+                            <li class='header-menu__item'>
+                                <a href='blog.html' class='header-menu__link'>Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions">
+                    <div class="header__select select" data-select-menu>
+                        <button class="select__header" type="button" aria-label="choose language"
+                            data-select-menu-button>
+                            <span class="select__value" data-select-menu-value>
+                                <svg width="20px" height="20px" viewBox="0 0 36 36">
+                                    <use xlink:href='img/icons/icons-sprite.svg#gb-flag'  ></use>
+                                </svg>
+                            </span>
+                            <span class="select__icon">
+                                <svg width="15" height="13" viewBox="0 0 15 13">
+                                    <use xlink:href='img/icons/icons-sprite.svg#arrow-bottom'></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="select__body" data-select-menu-drop-down>
+                            <li class="select__item" data-select-menu-option>
+                                <svg width="20px" height="20px" viewBox="0 0 36 36">
+                                    <use xlink:href='img/icons/icons-sprite.svg#gb-flag' ></use>
+                                </svg>
+                            </li>
+                            <li class="select__item" data-select-menu-option>
+                                <svg width="20px" height="20px" viewBox="0 0 36 36">
+                                    <use xlink:href='img/icons/icons-sprite.svg#ua-flag' ></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" aria-label="burger-button" class="header__burger burger">
+                    <span class="burger__line burger__line_01"></span>
+                    <span class="burger__line burger__line_02"></span>
+                </button>
+            </div>
+        </header>
+        <main class="page">
+            <section class="hero" aria-labelledby="main-title">
+                <div class="hero__decor ibg">
+                    <picture>
+                        <source srcset="img/hero/mobile/hero-back-mobile_01.avif" media="(max-width:767.98px)" type="image/avif">
+                        <source srcset="img/hero/mobile/hero-back-mobile_01.jpg" media="(max-width:767.98px)">
+                
+                        <source srcset="img/hero/hero-back_01.avif" type="image/avif">
+                        <img loading="lazy" width="1440" height="822" src="img/hero/hero-back_01.jpg" alt="about-us-back">
+                    </picture>
+                </div>
+                <div class="hero__container">
+                    <div class="hero__label label label-extra">Indulge in nature's beauty of</div>
+                    <h1 class="hero__title title title-white" id="main-title">The Emerald Sea</h1>
+                    <div class="hero__subtitle">
+                        Madagascar's endless & unique kiteboarding wonder
+                        <span>Opening Soon</span>
+                    </div>
+                    <form action="#" class="hero__form hero-form">
+                        <input placeholder="Your email:" type="email" class="hero-form__input">
+                        <button class="hero-form__button button">Subscribe to the newsletter</button>
+                    </form>
+                </div>
+            </section>
+            <div class="page__back-box">
+                <div class="page__back">
+                    <img src="img/main/line-decor.svg" loading="lazy" alt="page-background">
+                </div>
+                <section class="story" aria-labelledby="story-title">
+                    <div class="story__header header-story">
+                        <div class="header-story__container">
+                            <div class="header-story__details">
+                                <div class="header-story__label label">Rooted in nature</div>
+                                <h2 class="header-story__title title" id="story-title">SUSTAINABLE BY DESIGN</h2>
+                            </div>
+
+                            <div class="header-story__info">
+                                <p>
+                                    We embody the spirit of harmony and sustainability, crafting an unparalleled retreat
+                                    that seamlessly integrates
+                                    with Madagascar’s pristine coastline.
+                                </p>
+                                <p>
+                                    Our commitment to the environment is reflected in our use of rammed earth
+                                    construction, a technique that not
+                                    only complements the natural landscape but also enhances the beauty of the
+                                    surrounding terrain.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story__middle story-middle">
+                        <div class="story-middle__container story-middle__container-big">
+                            <div class="story-middle__swiper swiper-story swiper ">
+                                <div class="swiper-story__wrapper swiper-wrapper">
+                                    <div class="swiper-story__slide swiper-slide ibg">
+                                        <picture>
+                                            <source srcset="img/story/story-image_02.avif" type="image/avif">
+                                            <img width="1440" height="861" loading="lazy" src="img/story/story-image_02.jpg" alt="card-back">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-story__slide swiper-slide">
+                                        <div class="video video-ibg" data-js-video-player>
+                                            <div class="video__wrapper">
+                                                <div class="video__poster ibg _active" data-js-video-player-poster>
+                                                    <picture>
+                                                        <source srcset="img/story/story-image_01.avif"
+                                                            type="image/avif">
+                                                        <img width="935" height="498" loading="lazy"
+                                                            src="img/story/story-image_01.jpg" alt="video-poster">
+                                                    </picture>
+                                                </div>
+                                                <video src="videos/sample.mp4" width="935" height="498"
+                                                    data-js-video-player-video preload="none"> </video>
+                                            </div>
+                                            <button aria-label="Play video" title="Play video" type="button"
+                                                data-js-video-player-button class="video__play _active">
+                                                <svg width="22" height="24" viewBox="0 0 22 24">
+                                                    <use xlink:href='img/icons/icons-sprite.svg#play'></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-story__slide swiper-slide">
+                                        <div class="video video-ibg" data-js-video-player>
+                                            <div class="video__wrapper">
+                                                <div class="video__poster ibg _active" data-js-video-player-poster>
+                                                    <picture>
+                                                        <source srcset="img/story/story-image_01.avif"
+                                                            type="image/avif">
+                                                        <img width="935" height="498" loading="lazy"
+                                                            src="img/story/story-image_01.jpg" alt="video-poster">
+                                                    </picture>
+                                                </div>
+                                                <video src="videos/sample.mp4" width="935" height="498"
+                                                    data-js-video-player-video preload="none"> </video>
+                                            </div>
+                                            <button aria-label="Play video" title="Play video" type="button"
+                                                data-js-video-player-button class="video__play _active">
+                                                <svg width="22" height="24" viewBox="0 0 22 24">
+                                                    <use xlink:href='img/icons/icons-sprite.svg#play'></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-story__slide swiper-slide">
+                                        <div class="video video-ibg" data-js-video-player>
+                                            <div class="video__wrapper">
+                                                <div class="video__poster ibg _active" data-js-video-player-poster>
+                                                    <picture>
+                                                        <source srcset="img/story/story-image_01.avif"
+                                                            type="image/avif">
+                                                        <img width="935" height="498" loading="lazy"
+                                                            src="img/story/story-image_01.jpg" alt="video-poster">
+                                                    </picture>
+                                                </div>
+                                                <video src="videos/sample.mp4" width="935" height="498"
+                                                    data-js-video-player-video preload="none"> </video>
+                                            </div>
+                                            <button aria-label="Play video" title="Play video" type="button"
+                                                data-js-video-player-button class="video__play _active">
+                                                <svg width="22" height="24" viewBox="0 0 22 24">
+                                                    <use xlink:href='img/icons/icons-sprite.svg#play'></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-story__slide swiper-slide">
+                                        <div class="video video-ibg" data-js-video-player>
+                                            <div class="video__wrapper">
+                                                <div class="video__poster ibg _active" data-js-video-player-poster>
+                                                    <picture>
+                                                        <source srcset="img/story/story-image_01.avif"
+                                                            type="image/avif">
+                                                        <img width="935" height="498" loading="lazy"
+                                                            src="img/story/story-image_01.jpg" alt="video-poster">
+                                                    </picture>
+                                                </div>
+                                                <video src="videos/sample.mp4" width="935" height="498"
+                                                    data-js-video-player-video preload="none"> </video>
+                                            </div>
+                                            <button aria-label="Play video" title="Play video" type="button"
+                                                data-js-video-player-button class="video__play _active">
+                                                <svg width="22" height="24" viewBox="0 0 22 24">
+                                                    <use xlink:href='img/icons/icons-sprite.svg#play'></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-nav-pagination">
+                                    <div class="swiper-nav-pagination__header">
+                                        <button class="swiper-nav-pagination__previous" type="button"
+                                            aria-label="previous slide">
+                                            Previos
+                                        </button>
+                                        <div class="swiper-nav-pagination__progress-lines">
+                                            <div class="swiper-nav-pagination__progress-total"></div>
+                                            <div class="swiper-nav-pagination__progress-current"></div>
+                                        </div>
+                                        <button class="swiper-nav-pagination__next" type="button"
+                                            aria-label="next slide">
+                                            Next
+                                        </button>
+                                    </div>
+                                    <div class="swiper-nav-pagination__numbers">
+                                        <span class="swiper-nav-pagination__number-current"></span> /
+                                        <span class="swiper-nav-pagination__number-total"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story__footer footer-story">
+                        <div class="footer-story__container">
+                            <div class="footer-story__body">
+                                <div class="footer-story__info">
+                                    <p>
+                                        Each structure is designed to merge with its surroundings, blending elegant
+                                        simplicity with the raw, untamed charm of
+                                        the land. By honoring local culture and natural materials, and thoughtfully
+                                        integrating sustainable practices, we ensure
+                                        a presence that is both subtle and in harmony with nature. This philosophy
+                                        allows us to preserve the region’s unique
+                                        essence while offering guests an experience of profound connection with their
+                                        environment.
+                                    </p>
+                                </div>
+                                <div class="footer-story__actions">
+                                    <a href="" class="footer-story__link footer-story__link-location">Haiti street,
+                                        luxury
+                                        azul
+                                        resort Madagascar</a>
+                                    <a href="tel:+731234114560" class="footer-story__link">+73 123 411 4560</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="card">
+                    <div class="card__container card__container-big">
+                        <div class="card__background shadow shadow-medium ibg">
+                            <picture>
+                                <source srcset="img/card/card__image_01.avif" type="image/avif">
+                                <img width="1440" height="861" loading="lazy" src="img/card/card__image_01.jpg"
+                                    alt="card-back">
+                            </picture>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__info info-footer">
+                    <a href="/" class="info-footer__logo" aria-label="link homepage"><img loading="lazy"
+                            src="img/main/logo-dark.svg" alt="logo"></a>
+                    <form action="#" class="info-footer__form">
+                        <input type="email" placeholder="Your email:" class="info-footer__input">
+                        <button class="info-footer__button link">
+                            <span>Subscribe to the newsletter</span>
+                            <svg width="13" height="12" viewBox="0 0 13 12">
+                                <use xlink:href='img/icons/icons-sprite.svg#arrow-right'></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <nav class='footer__menu footer-menu'>
+                    <div class="footer-menu__label label">Menu</div>
+                    <ul class='footer-menu__list'>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Homepage</a>
+                        </li>
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>About us</a>
+                        </li>
+
+                        <li class='footer-menu__item'>
+                            <a href='' class='footer-menu__link'>Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts contacts-footer">
+                    <div class="contacts-footer__label label">Contact information</div>
+                    <address class="contacts-footer__address">
+                        <span class="contacts-footer__location">Haiti street, luxury azul resort Madagascar</span>
+                        <a href="mailto:azul@gmail.com" class="contacts-footer__email">azul@gmail.com</a>
+                        <a href="tel:+731234114560" class="contacts-footer__number">+73 123 411 4560</a>
+                    </address>
+                </div>
+                <div class="footer__socials socials-footer">
+                    <a href="" aria-label="dribble" class="socials-footer__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_01'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="twitter" class="socials-footer__item">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_02'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="youtube" class="socials-footer__item">
+                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_03'></use>
+                        </svg>
+                    </a>
+                    <a href="" aria-label="instagram" class="socials-footer__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <use xlink:href='img/icons/icons-sprite.svg#social_04'></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__empty"></div>
+                <div class="footer__copy">© 2024 Luminous. All rights reserved</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swipers.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

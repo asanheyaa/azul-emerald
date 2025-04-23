@@ -222,6 +222,7 @@ const swiperAdventure = new Swiper('.decor-adventure__swiper', {
 	slidesPerView: 1,
 	effect: 'fade',
 	speed: 500,
+	autoHeight: true,
 	fadeEffect: {
 		crossFade: true
 	},
@@ -256,13 +257,6 @@ const swiperAdventure = new Swiper('.decor-adventure__swiper', {
 	navigation: {
 		nextEl: '.adventure__footer .swiper-nav-pagination__next',
 		prevEl: '.adventure__footer .swiper-nav-pagination__previous',
-	},
-
-	breakpoints: {
-		992: {
-			allowTouchMove: false,
-		}
-
 	},
 });
 
